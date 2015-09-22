@@ -1,10 +1,6 @@
 #include "viewport.h"
 
 #include "CMU462.h"
-// #include <cmath>
-// #include <vector>
-#include <iostream>
-// #include <algorithm>
 
 
 namespace CMU462 {
@@ -14,8 +10,6 @@ void ViewportImp::set_viewbox( float x, float y, float span ) {
   // Task 4 (part 2): 
   // Set svg to normalized device coordinate transformation. Your input
   // arguments are defined as SVG canvans coordinates.
-
-  // std::cout << ", old anvas_to_norm :" << anvas_to_norm;
 
   double s_x = (double) x;
   double s_y = (double) y;
@@ -59,8 +53,6 @@ void ViewportImp::set_viewbox( float x, float y, float span ) {
 
 void ViewportImp::update_viewbox( float dx, float dy, float scale ) { 
   
-  // std::cout << "-------------In update_viewbox------------" << std::endl;
-  // std::cout << "old span" << span << std::endl;
   this->x -= dx; 
   this->y -= dy; 
   this->span *= scale; 

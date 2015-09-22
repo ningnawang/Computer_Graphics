@@ -138,7 +138,6 @@ void DrawSVG::key_event( char key ) {
 
     // SSAA controls
     case '=':
-      cout << "---------Increase sample rate---------------" << endl;
       inc_sample_rate();
       break;
     case '-':

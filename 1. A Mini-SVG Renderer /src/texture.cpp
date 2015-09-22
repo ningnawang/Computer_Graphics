@@ -29,9 +29,7 @@ inline void float_to_uint8( unsigned char* dst, float src[4] ) {
 
 
 void Sampler2DImp::generate_mips(Texture& tex, int startLevel) {
-
-  cout << "------------generate_mips-----------------" << endl;
-
+  
   // NOTE(sky): 
   // The starter code allocates the mip levels and generates a level 
   // map simply fills each level with a color that differs from its
@@ -56,7 +54,6 @@ void Sampler2DImp::generate_mips(Texture& tex, int startLevel) {
   int width  = baseWidth;
   int height = baseHeight;
   for (int i = 1; i <= numSubLevels; i++) {
-
     MipLevel& level = tex.mipmap[startLevel + i];
 
     // handle odd size texture by rounding down
@@ -72,7 +69,6 @@ void Sampler2DImp::generate_mips(Texture& tex, int startLevel) {
   Color colors[3] = { Color(1,0,0,1), Color(0,1,0,1), Color(0,0,1,1) };
   for(size_t i = 1; i < tex.mipmap.size(); ++i) {
 
-    Color c = colors[i % 3];
     MipLevel& mip = tex.mipmap[i];
     MipLevel& pre_mip = tex.mipmap[i - 1];
 
@@ -95,10 +91,6 @@ void Sampler2DImp::generate_mips(Texture& tex, int startLevel) {
       mip_index_x = 0;
       mip_index_y++;
     }
-
-    // for(size_t i = 0; i < 4 * mip.width * mip.height; i += 4) {
-    //   float_to_uint8( &mip.texels[i], &c.r );
-    // }
   }
 
 }
@@ -135,77 +127,84 @@ Color Sampler2DImp::sample_nearest(Texture& tex,
 
 
 
-Color Sampler2DImp::sample_bilinear(Texture& tex, 
-                                    float u, float v, 
-                                    int level) {
+  Color Sampler2DImp::sample_bilinear(Texture& tex, 
+				      float u, float v, 
+				      int level) {
 
-  // Task ?: Implement bilinear filtering
+    // Task ?: Implement bilinear filtering
 
-  // return magenta for invalid level
-  if (level > kMaxMipLevels) {
-    return Color(1,0,1,1);
+    // return magenta for invalid level
+    if (level > kMaxMipLevels) {
+      return Color(1,0,1,1);
+    }
+
+    // mapping from normalized space to texture space
+    float su = u * tex.mipmap[level].width;
+    float sv = v * tex.mipmap[level].height;
+
+    // interpolate the 4 nearest texels indices
+    int u00_index = (int) (floor(su - 0.5) < 0.0f ? 0.0f : floor(su - 0.5)); assert(u00_index >= 0);
+    int v00_index = (int) (floor(sv - 0.5) < 0.0f ? 0.0f : floor(sv - 0.5)); assert(u00_index >= 0);
+    // 4 nearest sample points in texture space
+    double u00 = (double) u00_index + 0.5;
+    double v00 = (double) v00_index + 0.5;
+
+    double u_ratio = abs(su - u00);
+    double v_ratio = abs(sv - v00);
+    double u_opposite = 1 - u_ratio;
+    double v_opposite = 1 - v_ratio;
+
+    // Get color of each texel
+    Color c00, c10, c01, c11, c_weighted;
+    MipLevel& mip = tex.mipmap[level];
+    uint8_to_float(&c00.r, &mip.texels[4 * ( u00_index      +  v00_index      * tex.mipmap[level].width)]);
+    uint8_to_float(&c10.r, &mip.texels[4 * ((u00_index + 1) +  v00_index      * tex.mipmap[level].width)]);
+    uint8_to_float(&c01.r, &mip.texels[4 * ( u00_index      + (v00_index + 1) * tex.mipmap[level].width)]);
+    uint8_to_float(&c11.r, &mip.texels[4 * ((u00_index + 1) + (v00_index + 1) * tex.mipmap[level].width)]);
+
+    // return the weighted-average color
+    c_weighted = (c00 * u_opposite + c10 * u_ratio) * v_opposite +
+      (c01 * u_opposite + c11 * u_ratio) * v_ratio;
+
+    return c_weighted;
   }
 
-  // mapping from normalized space to texture space
-  int su = u * tex.mipmap[level].width;
-  int sv = v * tex.mipmap[level].height;
-
-  // cout << tex.mipmap[level].width << endl;
-
-  // interpolate the 4 nearest texels indices
-  int u00_index = (int) floor(su - 0.5);
-  int v00_index = (int) floor(sv - 0.5);
-  // 4 nearest sample points in texture space
-  double u00 = (double) u00_index + 0.5;
-  double v00 = (double) v00_index + 0.5;
-
-  double u_ratio = su - u00;
-  double v_ratio = sv - v00;
-  double u_opposite = 1 - u_ratio;
-  double v_opposite = 1 - v_ratio;
-
-  // Get color of each texel
-  Color c00, c10, c01, c11, c_weighted;
-  MipLevel& mip = tex.mipmap[level];
-  uint8_to_float(&c00.r, &mip.texels[4 * ( u00_index      +  v00_index      * tex.mipmap[level].width)]);
-  uint8_to_float(&c10.r, &mip.texels[4 * ((u00_index + 1) +  v00_index      * tex.mipmap[level].width)]);
-  uint8_to_float(&c01.r, &mip.texels[4 * ( u00_index      + (v00_index + 1) * tex.mipmap[level].width)]);
-  uint8_to_float(&c11.r, &mip.texels[4 * ((u00_index + 1) + (v00_index + 1) * tex.mipmap[level].width)]);
-
-  // return the weighted-average color
-  c_weighted = (c00 * u_ratio + c10 * u_opposite) * v_ratio +
-               (c01 * u_ratio + c11 * u_opposite) * v_opposite;
-
-  return c_weighted;
-}
 
 
 
+  Color Sampler2DImp::sample_trilinear(Texture& tex, 
+				       float u, float v, 
+				       float u_scale, float v_scale) {
 
-Color Sampler2DImp::sample_trilinear(Texture& tex, 
-                                     float u, float v, 
-                                     float u_scale, float v_scale) {
+    // Task 8: Implement trilinear filtering
 
-  // Task 8: Implement trilinear filtering
-
-  // return magenta for invalid level
-  // if (level > kMaxMipLevels) {
-  //   return Color(1,0,1,1);
-  // }
-  int level_low, level_high;
-  float L = sqrt(pow(u_scale * tex.width, 2) + pow(v_scale * tex.height, 2));
-  float d = log2(L);
-  if (d < 0.0f) {
-    return sample_bilinear(tex, u, v, 0);
-  }
+    int level_low, level_high;
+    float L = sqrt(pow(u_scale * tex.width, 2) + pow(v_scale * tex.height, 2));
+    float d = log2(L);
+  
+    // all negative d will rasterize level 0
+    if (d < 0.0f) {
+      return sample_bilinear(tex, u, v, 0);
+    }
+  
+    // get two nearest levels
+    level_low = (int) floor(d);
+    level_high = (int) ceil(d);
 
   
-
-
-
-
-  // return Color(1,0,1,1);
-
-}
+    //return magenta for invalid level
+    if (level_high > kMaxMipLevels) {
+      return Color(1,0,1,1);
+    }
+  
+    if (level_low == level_high) {
+      return sample_bilinear(tex, u, v, level_low);
+    } else {
+      double dToLow_ratio = (double) (d - level_low);
+      // calculate weighted color by calling bilinear function
+      return sample_bilinear(tex, u, v, level_low) * (1 - dToLow_ratio) +
+	sample_bilinear(tex, u, v, level_high) * dToLow_ratio;
+    }
+  }
 
 } // namespace CMU462

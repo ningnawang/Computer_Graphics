@@ -85,13 +85,16 @@ class SoftwareRendererImp : public SoftwareRenderer {
 
  private:
 
+  // Customized methods //
+  
   // super sampling buffer
   unsigned char* supersample_target;
 
-  // std::vector<unsigned char> supersample_target;
-
   // Supper Sampling buffer dimension (in pixels)
   size_t superTarget_w; size_t superTarget_h;
+  
+  // rasterize a point on supersample_target
+  void rasterize_supersample_point( float x, float y, Color color );
 
   // helper method for Edge Equation
   int getSgn(double d);
