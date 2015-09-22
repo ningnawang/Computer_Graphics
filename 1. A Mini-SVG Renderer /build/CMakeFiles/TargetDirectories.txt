@@ -1,1 +1,0 @@
-/Users/NingnaWang/Desktop/ComputerGraphics/hw1-A Mini-SVG Renderer /build/CMakeFiles/drawsvg.dir
