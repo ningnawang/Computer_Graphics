@@ -6,6 +6,8 @@
 
 
 ## Build Instructions
-Under "1. A Mini-SVG Renderer" file, run following command in terminal:
-$ mkdir build && cd build && cmake ../src && make && make install
+- Make sure you have cmake installed
+- Open Terminal
+- Under "1. A Mini-SVG Renderer" file, run following command:
+- $ mkdir build && cd build && cmake ../src && make && make install
 
