@@ -10,6 +10,8 @@
 -- <strong>Supersampling</strong> <br/>
 -- <strong>Transformation</strong> <br/>
 -- <strong>Texture Mapping</strong> <br/>
+-- <strong>Bilinear Filtering</strong> <br/>
+-- <strong>Trilinear Filtering</strong> <br/>
 -- <strong>Mipmap</strong> <br/>
 -- <strong>Occlusion</strong> <br/>
 -- <strong>Alpha Compositing</strong> <br/>
