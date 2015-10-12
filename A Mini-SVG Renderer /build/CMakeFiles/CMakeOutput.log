@@ -1,0 +1,491 @@
+The system is: Darwin - 14.5.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is AppleClang, found in "/Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/3.3.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is AppleClang, found in "/Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/3.3.1/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_be573/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_be573.dir/build.make CMakeFiles/cmTC_be573.dir/build
+Building C object CMakeFiles/cmTC_be573.dir/testCCompiler.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_be573.dir/testCCompiler.c.o   -c /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_be573
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be573.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_be573.dir/testCCompiler.c.o  -o cmTC_be573  
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_76b2b/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_76b2b.dir/build.make CMakeFiles/cmTC_76b2b.dir/build
+Building C object CMakeFiles/cmTC_76b2b.dir/CMakeCCompilerABI.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_76b2b.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-3.3/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_76b2b
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76b2b.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_76b2b.dir/CMakeCCompilerABI.c.o  -o cmTC_76b2b   
+Apple LLVM version 7.0.0 (clang-700.0.72)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_76b2b -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_76b2b.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-253.3
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_76b2b/fast"]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_76b2b.dir/build.make CMakeFiles/cmTC_76b2b.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_76b2b.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_76b2b.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-3.3/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_76b2b]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76b2b.dir/link.txt --verbose=1]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_76b2b.dir/CMakeCCompilerABI.c.o  -o cmTC_76b2b   ]
+  ignore line: [Apple LLVM version 7.0.0 (clang-700.0.72)]
+  ignore line: [Target: x86_64-apple-darwin14.5.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_76b2b -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_76b2b.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.10.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_76b2b] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_76b2b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [/Library/Developer/CommandLineTools/usr/lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cb50d/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_cb50d.dir/build.make CMakeFiles/cmTC_cb50d.dir/build
+Building C object CMakeFiles/cmTC_cb50d.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_cb50d.dir/feature_tests.c.o   -c /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_cb50d
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb50d.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_cb50d.dir/feature_tests.c.o  -o cmTC_cb50d  
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_36bf9/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_36bf9.dir/build.make CMakeFiles/cmTC_36bf9.dir/build
+Building C object CMakeFiles/cmTC_36bf9.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_36bf9.dir/feature_tests.c.o   -c /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_36bf9
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36bf9.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_36bf9.dir/feature_tests.c.o  -o cmTC_36bf9  
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0af13/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_0af13.dir/build.make CMakeFiles/cmTC_0af13.dir/build
+Building C object CMakeFiles/cmTC_0af13.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_0af13.dir/feature_tests.c.o   -c /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_0af13
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0af13.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_0af13.dir/feature_tests.c.o  -o cmTC_0af13  
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bd81d/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_bd81d.dir/build.make CMakeFiles/cmTC_bd81d.dir/build
+Building CXX object CMakeFiles/cmTC_bd81d.dir/testCXXCompiler.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++     -o CMakeFiles/cmTC_bd81d.dir/testCXXCompiler.cxx.o -c /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_bd81d
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd81d.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_bd81d.dir/testCXXCompiler.cxx.o  -o cmTC_bd81d  
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_91381/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_91381.dir/build.make CMakeFiles/cmTC_91381.dir/build
+Building CXX object CMakeFiles/cmTC_91381.dir/CMakeCXXCompilerABI.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++     -o CMakeFiles/cmTC_91381.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-3.3/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_91381
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91381.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_91381.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_91381   
+Apple LLVM version 7.0.0 (clang-700.0.72)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_91381 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_91381.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-253.3
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_91381/fast"]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_91381.dir/build.make CMakeFiles/cmTC_91381.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_91381.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++     -o CMakeFiles/cmTC_91381.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-3.3/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_91381]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91381.dir/link.txt --verbose=1]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_91381.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_91381   ]
+  ignore line: [Apple LLVM version 7.0.0 (clang-700.0.72)]
+  ignore line: [Target: x86_64-apple-darwin14.5.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_91381 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_91381.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.10.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_91381] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_91381.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [c++;/Library/Developer/CommandLineTools/usr/lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+
+
+
+
+Detecting CXX [-std=c++1y] compiler features compiled with the following output:
+Change Dir: /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f6fd5/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f6fd5.dir/build.make CMakeFiles/cmTC_f6fd5.dir/build
+Building CXX object CMakeFiles/cmTC_f6fd5.dir/feature_tests.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTC_f6fd5.dir/feature_tests.cxx.o -c /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_f6fd5
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6fd5.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_f6fd5.dir/feature_tests.cxx.o  -o cmTC_f6fd5  
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_56018/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_56018.dir/build.make CMakeFiles/cmTC_56018.dir/build
+Building CXX object CMakeFiles/cmTC_56018.dir/feature_tests.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_56018.dir/feature_tests.cxx.o -c /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_56018
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56018.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_56018.dir/feature_tests.cxx.o  -o cmTC_56018  
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_df294/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_df294.dir/build.make CMakeFiles/cmTC_df294.dir/build
+Building CXX object CMakeFiles/cmTC_df294.dir/feature_tests.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_df294.dir/feature_tests.cxx.o -c /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_df294
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df294.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_df294.dir/feature_tests.cxx.o  -o cmTC_df294  
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dbcf6/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_dbcf6.dir/build.make CMakeFiles/cmTC_dbcf6.dir/build
+Building C object CMakeFiles/cmTC_dbcf6.dir/CheckIncludeFiles.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_dbcf6.dir/CheckIncludeFiles.c.o   -c /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_dbcf6
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbcf6.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_dbcf6.dir/CheckIncludeFiles.c.o  -o cmTC_dbcf6  
+
+
+Determining if the pthread_create exist passed with the following output:
+Change Dir: /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fff0a/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_fff0a.dir/build.make CMakeFiles/cmTC_fff0a.dir/build
+Building C object CMakeFiles/cmTC_fff0a.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_fff0a.dir/CheckSymbolExists.c.o   -c /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_fff0a
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fff0a.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_fff0a.dir/CheckSymbolExists.c.o  -o cmTC_fff0a  
+
+File /Users/NingnaWang/Desktop/asst2_meshedit/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
