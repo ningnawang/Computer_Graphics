@@ -15,3 +15,17 @@
 -- <strong>Mipmap</strong> <br/>
 -- <strong>Occlusion</strong> <br/>
 -- <strong>Alpha Compositing</strong> <br/>
+
+
+
+## 2. A Mini Mesh Editor
+  <http://462cmu.github.io/asst2_meshedit/>
+- Implemented a simple mesh editor to manipulate and resample triangle meshes
+- Developed a tool to load and edit COLLADA mesh files used by major modeling packages and graphics engines
+- Including: <br/>
+-- <strong>Upsampling</strong> <br/>
+-- <strong>Downsampling</strong> <br/>
+-- <strong>Resampling</strong> <br/>
+-- <strong>Edge Flip</strong> <br/>
+-- <strong>Edge Collapse</strong> <br/>
+-- <strong>Edge Split</strong> <br/>
