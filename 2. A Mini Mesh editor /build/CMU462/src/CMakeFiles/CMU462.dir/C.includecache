@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/CMU462/src/osdfont.c
+

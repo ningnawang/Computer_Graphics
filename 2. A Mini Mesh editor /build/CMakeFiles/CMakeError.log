@@ -1,0 +1,73 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3610151626/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec3610151626.dir/build.make CMakeFiles/cmTryCompileExec3610151626.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3610151626.dir/CheckSymbolExists.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTryCompileExec3610151626.dir/CheckSymbolExists.c.o   -c /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3610151626
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3610151626.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc         CMakeFiles/cmTryCompileExec3610151626.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3610151626 -rdynamic 
+CMakeFiles/cmTryCompileExec3610151626.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTryCompileExec3610151626] Error 1
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec3610151626/fast] Error 2
+
+File /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2596710165/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2596710165.dir/build.make CMakeFiles/cmTryCompileExec2596710165.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2596710165.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2596710165.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2596710165
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2596710165.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2596710165.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2596710165 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTryCompileExec2596710165] Error 1
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec2596710165/fast] Error 2
+
+
+Determining if the function glXGetProcAddressEXT exists failed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1080500041/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1080500041.dir/build.make CMakeFiles/cmTryCompileExec1080500041.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1080500041.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=glXGetProcAddressEXT   -o CMakeFiles/cmTryCompileExec1080500041.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1080500041
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1080500041.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc     -DCHECK_FUNCTION_EXISTS=glXGetProcAddressEXT    CMakeFiles/cmTryCompileExec1080500041.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1080500041 -rdynamic -lGL 
+CMakeFiles/cmTryCompileExec1080500041.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `glXGetProcAddressEXT'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTryCompileExec1080500041] Error 1
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec1080500041/fast] Error 2
+
+

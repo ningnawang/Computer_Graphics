@@ -1,0 +1,397 @@
+The system is: Linux - 3.10.0-229.14.1.el7.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/lib64/ccache/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/2.8.11/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/lib64/ccache/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/2.8.11/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec219394581/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec219394581.dir/build.make CMakeFiles/cmTryCompileExec219394581.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec219394581.dir/testCCompiler.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTryCompileExec219394581.dir/testCCompiler.c.o   -c /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec219394581
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec219394581.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc         CMakeFiles/cmTryCompileExec219394581.dir/testCCompiler.c.o  -o cmTryCompileExec219394581 -rdynamic 
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1708870391/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1708870391.dir/build.make CMakeFiles/cmTryCompileExec1708870391.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1708870391.dir/CMakeCCompilerABI.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTryCompileExec1708870391.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec1708870391
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1708870391.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc       -v CMakeFiles/cmTryCompileExec1708870391.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1708870391 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/lto-wrapper
+Target: x86_64-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1708870391' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.3/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec1708870391 /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../.. CMakeFiles/cmTryCompileExec1708870391.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec1708870391/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1708870391.dir/build.make CMakeFiles/cmTryCompileExec1708870391.dir/build]
+  ignore line: [gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec1708870391.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/lib64/ccache/cc    -o CMakeFiles/cmTryCompileExec1708870391.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec1708870391]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1708870391.dir/link.txt --verbose=1]
+  ignore line: [/usr/lib64/ccache/cc       -v CMakeFiles/cmTryCompileExec1708870391.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1708870391 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/lto-wrapper]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1708870391' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.3/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec1708870391 /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../.. CMakeFiles/cmTryCompileExec1708870391.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/collect2] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1708870391] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.3] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../..]
+    arg [CMakeFiles/cmTryCompileExec1708870391.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.3]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/4.8.3;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1238722158/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1238722158.dir/build.make CMakeFiles/cmTryCompileExec1238722158.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1238722158.dir/testCXXCompiler.cxx.o
+/usr/lib64/ccache/c++     -o CMakeFiles/cmTryCompileExec1238722158.dir/testCXXCompiler.cxx.o -c /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec1238722158
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1238722158.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++          CMakeFiles/cmTryCompileExec1238722158.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1238722158 -rdynamic 
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec215743846/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec215743846.dir/build.make CMakeFiles/cmTryCompileExec215743846.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec215743846.dir/CMakeCXXCompilerABI.cpp.o
+/usr/lib64/ccache/c++     -o CMakeFiles/cmTryCompileExec215743846.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec215743846
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec215743846.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++        -v CMakeFiles/cmTryCompileExec215743846.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec215743846 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/lto-wrapper
+Target: x86_64-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec215743846' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.3/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec215743846 /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../.. CMakeFiles/cmTryCompileExec215743846.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec215743846/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec215743846.dir/build.make CMakeFiles/cmTryCompileExec215743846.dir/build]
+  ignore line: [gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec215743846.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/lib64/ccache/c++     -o CMakeFiles/cmTryCompileExec215743846.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec215743846]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec215743846.dir/link.txt --verbose=1]
+  ignore line: [/usr/lib64/ccache/c++        -v CMakeFiles/cmTryCompileExec215743846.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec215743846 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/lto-wrapper]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec215743846' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.3/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec215743846 /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../.. CMakeFiles/cmTryCompileExec215743846.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/collect2] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec215743846] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.3] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../..]
+    arg [CMakeFiles/cmTryCompileExec215743846.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.3]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/4.8.3;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+Determining if the function XOpenDisplay exists in the /usr/lib64/libX11.so;/usr/lib64/libXext.so passed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3496175977/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec3496175977.dir/build.make CMakeFiles/cmTryCompileExec3496175977.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3496175977.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec3496175977.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3496175977
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3496175977.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc     -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec3496175977.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3496175977 -rdynamic -lX11 -lXext 
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec614938556/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec614938556.dir/build.make CMakeFiles/cmTryCompileExec614938556.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec614938556.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec614938556.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec614938556
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec614938556.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc     -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec614938556.dir/CheckFunctionExists.c.o  -o cmTryCompileExec614938556 -rdynamic 
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec314930092/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec314930092.dir/build.make CMakeFiles/cmTryCompileExec314930092.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec314930092.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec314930092.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec314930092
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec314930092.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc     -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec314930092.dir/CheckFunctionExists.c.o  -o cmTryCompileExec314930092 -rdynamic 
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1597226145/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1597226145.dir/build.make CMakeFiles/cmTryCompileExec1597226145.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1597226145.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec1597226145.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1597226145
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1597226145.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc     -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec1597226145.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1597226145 -rdynamic 
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2526899113/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2526899113.dir/build.make CMakeFiles/cmTryCompileExec2526899113.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2526899113.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec2526899113.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2526899113
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2526899113.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc     -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec2526899113.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2526899113 -rdynamic 
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec228200585/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec228200585.dir/build.make CMakeFiles/cmTryCompileExec228200585.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec228200585.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec228200585.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec228200585
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec228200585.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc     -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec228200585.dir/CheckFunctionExists.c.o  -o cmTryCompileExec228200585 -rdynamic -lICE 
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec782864128/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec782864128.dir/build.make CMakeFiles/cmTryCompileExec782864128.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec782864128.dir/CheckIncludeFiles.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTryCompileExec782864128.dir/CheckIncludeFiles.c.o   -c /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec782864128
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec782864128.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc         CMakeFiles/cmTryCompileExec782864128.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec782864128 -rdynamic 
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3342025784/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec3342025784.dir/build.make CMakeFiles/cmTryCompileExec3342025784.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3342025784.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3342025784.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3342025784
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3342025784.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc     -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3342025784.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3342025784 -rdynamic -lpthread 
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function glXGetProcAddress exists passed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2624334008/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2624334008.dir/build.make CMakeFiles/cmTryCompileExec2624334008.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2624334008.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=glXGetProcAddress   -o CMakeFiles/cmTryCompileExec2624334008.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2624334008
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2624334008.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc     -DCHECK_FUNCTION_EXISTS=glXGetProcAddress    CMakeFiles/cmTryCompileExec2624334008.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2624334008 -rdynamic -lGL 
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function glXGetProcAddressARB exists passed with the following output:
+Change Dir: /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2520347312/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2520347312.dir/build.make CMakeFiles/cmTryCompileExec2520347312.dir/build
+gmake[1]: Entering directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2520347312.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=glXGetProcAddressARB   -o CMakeFiles/cmTryCompileExec2520347312.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2520347312
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2520347312.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc     -DCHECK_FUNCTION_EXISTS=glXGetProcAddressARB    CMakeFiles/cmTryCompileExec2520347312.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2520347312 -rdynamic -lGL 
+gmake[1]: Leaving directory `/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/build/CMakeFiles/CMakeTmp'
+
+
