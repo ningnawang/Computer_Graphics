@@ -1,0 +1,274 @@
+<!-- Author Nina Wang -->
+<svg>
+<g>
+   <!-- Mr.Q's head -->
+    <g>
+      <ellipse
+         ry="165.15994"
+         rx="157.5838"
+         cy="448.27612"
+         cx="344.49973"
+         style="fill:#5fd282;fill-opacity:1;fill-rule:evenodd;" />
+      <ellipse
+         ry="71.371597"
+         rx="74.402054"
+         cy="397.53082"
+         cx="346.85919"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;" />
+      <ellipse
+         ry="48.739857"
+         rx="53.538086"
+         cy="404.0968"
+         cx="354.18283"
+         style="fill:#2c210a;fill-opacity:1" />
+      <ellipse
+         transform="matrix(0.93392497,-0.35746908,0.3030844,0.95296372,0,0)"
+         ry="15.782916"
+         rx="15.280426"
+         cy="463.5433"
+         cx="191.49271"
+         style="fill:#ffffff;fill-opacity:1" />
+      <ellipse
+         ry="15.404827"
+         rx="17.425131"
+         cy="398.28845"
+         cx="352.4151"
+         style="fill:#ffffff;fill-opacity:1" />
+      <ellipse
+         transform="scale(1,-1)"
+         ry="34.913841"
+         rx="100.82629"
+         cy="520.76941"
+         cx="348.12192"
+         style="fill:#313839;fill-opacity:1;fill-rule:evenodd;" />
+      <rect
+         transform="matrix(0.95948651,-0.28175457,0.22117369,0.97523443,0,0)"
+         y="556.01892"
+         x="177.00653"
+         height="22.254414"
+         width="11.723187"
+         style="fill:#ffffff;fill-opacity:1" />
+      <rect
+         transform="matrix(0.99996517,-0.00834668,0.00878942,0.99996137,0,0)"
+         y="489.25418"
+         x="334.66641"
+         height="19.195456"
+         width="11.616733"
+         style="fill:#ffffff;fill-opacity:1" />
+      <rect
+         transform="matrix(0.99308132,0.11742869,-0.12127863,0.9926185,0,0)"
+         y="439.9628"
+         x="439.23352"
+         height="21.108503"
+         width="12.296373"
+         style="fill:#ffffff;fill-opacity:1" />
+      <rect
+         transform="matrix(0.98564444,-0.16883433,0.16883433,0.98564444,0,0)"
+         y="590.22296"
+         x="294.72897"
+         height="19.697975"
+         width="11.616755"
+         style="fill:#ffffff;fill-opacity:1" />
+      <rect
+         transform="matrix(0.99981505,-0.01923208,0.01803825,0.9998373,0,0)"
+         y="540.59369"
+         x="338.2691"
+         height="21.19677"
+         width="12.106588"
+         style="fill:#ffffff;fill-opacity:1" />
+      <rect
+         transform="matrix(0.97257264,0.23259934,-0.18102059,0.98347931,0,0)"
+         y="443.97018"
+         x="389.60858"
+         height="22.344149"
+         width="11.689835"
+         style="fill:#ffffff;fill-opacity:1" />
+       <circle cx="400" cy="450" r="1" fill="#000000" /> <!-- center of rotation -->
+    </g>
+
+    <!-- Mr.Q's ball -->
+    <g>
+     <ellipse
+        style="fill:#004633;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+        cx="632.55188"
+        cy="768.23383"
+        rx="86.042191"
+        ry="91.242546" />
+     <rect
+        style="fill:#073c3b;fill-opacity:1;stroke:none;stroke-opacity:1"
+        width="118.18983"
+        height="119.13535"
+        x="572.03876"
+        y="707.24792" />
+     <circle
+        style="fill:#396433;fill-opacity:1;stroke:none;stroke-opacity:1"
+        cx="631.13367"
+        cy="765.39734"
+        r="50.585243" />
+     <rect
+        style="fill:#0a2c19;fill-opacity:1;stroke:none;stroke-opacity:1"
+        width="69.022858"
+        height="63.349747"
+        x="597.56775"
+        y="734.66797" />
+     <ellipse
+        style="fill:#1d5a14;fill-opacity:1;stroke:none;stroke-opacity:1"
+        cx="632.0791"
+        cy="766.34277"
+        rx="27.892799"
+        ry="27.892797" />
+     <rect
+        style="fill:#142210;fill-opacity:1;stroke:none;stroke-opacity:1"
+        width="35.929707"
+        height="34.03867"
+        x="614.58704"
+        y="750.74176" />
+     <ellipse
+        style="fill:#147210;fill-opacity:1;stroke:none;stroke-opacity:1"
+        cx="632.07922"
+        cy="767.28839"
+        rx="13.710019"
+        ry="12.764501" />
+     <rect
+        style="fill:#140810;fill-opacity:1;stroke:none;stroke-opacity:1"
+        width="15.128298"
+        height="12.291741"
+        x="624.98779"
+        y="761.14246" />
+     <circle cx="632" cy="768" r="1" fill="#000000" /> <!-- center of rotation -->
+    </g>
+
+
+    <!-- Mr.Q's left leg -->
+
+    <g>
+      <!-- Left leg -->
+      <g>
+        <rect
+           transform="matrix(0.92377646,0.38293218,-0.50255232,0.8645468,0,0)"
+           y="441.62039"
+           x="533.68396"
+           height="168.12004"
+           width="25.446093"
+           style="fill:#5fd282;fill-opacity:1" />
+           <circle cx="270" cy="600" r="1" fill="#000000" /> <!-- center of rotation -->
+        </g>
+       <!-- left foot -->
+       <g> 
+         <ellipse
+            transform="matrix(0.94189109,0.33591841,-0.33591841,0.94189109,0,0)"
+            ry="17.5"
+            rx="35.892857"
+            cy="622.15497"
+            cx="411.24765"
+            style="fill:#5fd282;fill-opacity:1" />
+            <circle cx="205" cy="730" r="1" fill="#000000" /> <!-- center of rotation -->
+        </g>
+    </g>
+
+    <!-- Mr.Q's right leg -->
+    <g>
+      <!-- right leg -->
+      <g>
+      <rect
+         transform="matrix(0.99952435,-0.03083939,0.0284336,0.99959568,0,0)"
+         y="614.6441"
+         x="319.11563"
+         height="155.76131"
+         width="25.845455"
+         style="fill:#5fd282;fill-opacity:1" />
+         <circle cx="350" cy="610" r="1" fill="#000000" /> <!-- center of rotation -->
+      </g>
+      <!-- right foot -->
+      <g>
+         <ellipse
+            ry="17.5"
+            rx="35.892857"
+            cy="760.57648"
+            cx="375.32144"
+            style="fill:#5fd282;fill-opacity:1" />
+         <circle cx="355" cy="760" r="1" fill="#000000" /> <!-- center of rotation -->
+       </g>
+    </g>
+
+
+    <!-- Mr.Q's left arm -->
+    <g>
+      <!-- left arm -->
+      <g>
+      <rect
+         transform="matrix(0.78713051,0.61678648,-0.56807428,0.82297728,0,0)"
+         y="187.53116"
+         x="297.85214"
+         height="26.293911"
+         width="106.30305"
+         style="fill:#5fd282;fill-opacity:1;" />
+         <circle cx="200" cy="400" r="1" fill="#000000" /> <!-- center of rotation -->
+      </g>
+      <!-- left hand -->
+      <g>
+        <g>
+         <rect
+            transform="matrix(0.50704114,0.86192186,-0.97137473,0.2375524,0,0)"
+            y="62.822807"
+            x="297.38062"
+            height="26.136724"
+            width="88.209923"
+            style="fill:#5fd282;fill-opacity:1;" />
+          <circle cx="120" cy="350" r="1" fill="#000000" /> <!-- center of rotation -->
+        </g>
+        <g>
+         <ellipse
+            transform="matrix(0.80833812,0.58871851,-0.58871851,0.80833812,0,0)"
+            ry="26.428572"
+            rx="16.428572"
+            cy="153.53239"
+            cx="217.85645"
+            style="fill:#5fd282;fill-opacity:1" />
+            <circle cx="80" cy="270" r="1" fill="#000000" /> <!-- center of rotation -->
+        </g>
+       </g>
+    </g>
+
+
+    <!-- Mr.Q's right arm -->
+    <g> 
+      <g>
+        <g>
+          <rect
+             transform="matrix(-0.8958632,0.44432997,-0.39656585,-0.91800628,0,0)"
+             y="-633.26843"
+             x="-371.45541"
+             height="27.372683"
+             width="99.935265"
+             style="fill:#5fd282;fill-opacity:1;" />
+           <circle cx="500" cy="450" r="1" fill="#000000" /> <!-- center of rotation -->
+        </g>
+        <!-- right hand -->
+        <g>
+          <g>
+            <rect
+               transform="matrix(0.90315694,0.42931054,-0.36908327,0.92939633,0,0)"
+               y="109.51978"
+               x="685.3136"
+               height="24.097763"
+               width="97.266121"
+               style="fill:#5fd282;fill-opacity:1;" />
+               <circle cx="575" cy="405" r="1" fill="#000000" /> <!-- center of rotation -->
+          </g>
+          <g>
+            <ellipse
+               transform="matrix(0.80833812,0.58871851,-0.58871851,0.80833812,0,0)"
+               ry="26.428572"
+               rx="16.428572"
+               cy="-44.146103"
+               cx="808.37329"
+               style="fill:#5fd282;fill-opacity:1" />
+               <circle cx="670" cy="450" r="1" fill="#000000" /> <!-- center of rotation -->
+          </g>
+          </g>
+      </g>
+     </g> 
+
+</g>
+</svg>

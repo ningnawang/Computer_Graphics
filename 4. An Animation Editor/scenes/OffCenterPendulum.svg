@@ -1,0 +1,12 @@
+<svg>
+   <g>
+      <g>
+         <polygon fill="#0000FF" stroke="#231F20" stroke-width="2" points="333,468 279,468 269,322 306,302 343,322"/>
+         <circle fill="#231F20" cx="306" cy="385" r="6"/>
+      </g>
+      <g>
+         <polygon fill="#FFFF00" stroke="#231F20" stroke-width="2" points="306,468 37,468 96,527 306,527"/>
+         <circle fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" cx="306" cy="468" r="6"/>
+      </g>
+   </g>
+</svg>
