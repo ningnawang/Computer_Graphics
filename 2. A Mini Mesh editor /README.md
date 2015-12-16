@@ -16,6 +16,18 @@
 ## Build Instructions
 - Make sure you have <strong>cmake</strong> installed
 - Open Terminal
-- Under "1. A Mini Mesh Editor" file, run following command:
-- $ mkdir build && cd build && cmake .. && make && make install
+- Under "1. A Mini-SVG Renderer" file, run following command:
+- $ <strong> mkdir build && cd build && cmake .. && make && make </strong>
+- Then you can change following path to rasterize every file under <strong> /dae/ </strong> directory:
 
+- $  <strong> ./meshedit ../dae/cow.dae </strong>
+- press <strong> U </strong> for upsampling 
+![alt tag]()
+
+- $  <strong> ./meshedit ../dae/cow.dae </strong>
+- press <strong> D </strong> for downsampling 
+![alt tag]()
+
+- $  <strong> ./meshedit ../dae/cow.dae </strong>
+- press <strong> R </strong> for resampling 
+![alt tag]()
