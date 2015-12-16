@@ -20,14 +20,17 @@
 - $ <strong> mkdir build && cd build && cmake .. && make && make </strong>
 - Then you can change following path to rasterize every file under <strong> /dae/ </strong> directory:
 
+### example 1
 - $  <strong> ./meshedit ../dae/cow.dae </strong>
 - press <strong> U </strong> for upsampling 
-![alt tag]()
+![alt tag](https://github.com/junanita/Computer-Graphics/blob/master/2.%20A%20Mini%20Mesh%20editor%20/result/upsampling.png)
 
+### example 2
 - $  <strong> ./meshedit ../dae/cow.dae </strong>
 - press <strong> D </strong> for downsampling 
-![alt tag]()
+![alt tag](https://github.com/junanita/Computer-Graphics/blob/master/2.%20A%20Mini%20Mesh%20editor%20/result/downsampling.png)
 
+### example 3
 - $  <strong> ./meshedit ../dae/cow.dae </strong>
 - press <strong> R </strong> for resampling 
-![alt tag]()
+![alt tag](https://github.com/junanita/Computer-Graphics/blob/master/2.%20A%20Mini%20Mesh%20editor%20/result/resampling.png)
