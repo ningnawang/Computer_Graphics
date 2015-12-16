@@ -29,3 +29,13 @@
 -- <strong>Edge Flip</strong> <br/>
 -- <strong>Edge Collapse</strong> <br/>
 -- <strong>Edge Split</strong> <br/>
+
+
+## 4. An Animation Editor 
+  <http://462cmu.github.io/asst4_animation>
+- Implement an application that allows to manipulate and animate jointed cartoon characters
+- Developed a tool that can produce animations using three of the major techniques in production computer animation: keyframing, numerical optimization, and physically-based simulation.
+- Including: <br/>
+-- <strong>keyframing</strong> <br/>
+-- <strong>numerical optimization</strong> <br/>
+-- <strong>physically-based simulation</strong> <br/>
