@@ -1,4 +1,4 @@
-# Install script for directory: /Users/NingnaWang/Desktop/asst4_animation/src
+# Install script for directory: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,18 +29,18 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/NingnaWang/Desktop/asst4_animation/animator")
+   "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/animator")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/NingnaWang/Desktop/asst4_animation" TYPE EXECUTABLE FILES "/Users/NingnaWang/Desktop/asst4_animation/build/animator")
-  if(EXISTS "$ENV{DESTDIR}/Users/NingnaWang/Desktop/asst4_animation/animator" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/NingnaWang/Desktop/asst4_animation/animator")
+file(INSTALL DESTINATION "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor" TYPE EXECUTABLE FILES "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/animator")
+  if(EXISTS "$ENV{DESTDIR}/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/animator" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/animator")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" "$ENV{DESTDIR}/Users/NingnaWang/Desktop/asst4_animation/animator")
+      execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" "$ENV{DESTDIR}/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/animator")
     endif()
   endif()
 endif()

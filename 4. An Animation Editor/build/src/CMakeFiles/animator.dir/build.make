@@ -43,10 +43,10 @@ RM = /opt/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/NingnaWang/Desktop/asst4_animation
+CMAKE_SOURCE_DIR = "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/NingnaWang/Desktop/asst4_animation/build
+CMAKE_BINARY_DIR = "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build"
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/animator.dir/depend.make
@@ -59,16 +59,16 @@ include src/CMakeFiles/animator.dir/flags.make
 
 src/CMakeFiles/animator.dir/svg.cpp.o: src/CMakeFiles/animator.dir/flags.make
 src/CMakeFiles/animator.dir/svg.cpp.o: ../src/svg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/animator.dir/svg.cpp.o"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/svg.cpp.o -c /Users/NingnaWang/Desktop/asst4_animation/src/svg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/animator.dir/svg.cpp.o"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/svg.cpp.o -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg.cpp"
 
 src/CMakeFiles/animator.dir/svg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animator.dir/svg.cpp.i"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/NingnaWang/Desktop/asst4_animation/src/svg.cpp > CMakeFiles/animator.dir/svg.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg.cpp" > CMakeFiles/animator.dir/svg.cpp.i
 
 src/CMakeFiles/animator.dir/svg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animator.dir/svg.cpp.s"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/NingnaWang/Desktop/asst4_animation/src/svg.cpp -o CMakeFiles/animator.dir/svg.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg.cpp" -o CMakeFiles/animator.dir/svg.cpp.s
 
 src/CMakeFiles/animator.dir/svg.cpp.o.requires:
 
@@ -83,16 +83,16 @@ src/CMakeFiles/animator.dir/svg.cpp.o.provides.build: src/CMakeFiles/animator.di
 
 src/CMakeFiles/animator.dir/png.cpp.o: src/CMakeFiles/animator.dir/flags.make
 src/CMakeFiles/animator.dir/png.cpp.o: ../src/png.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/animator.dir/png.cpp.o"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/png.cpp.o -c /Users/NingnaWang/Desktop/asst4_animation/src/png.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/animator.dir/png.cpp.o"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/png.cpp.o -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/png.cpp"
 
 src/CMakeFiles/animator.dir/png.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animator.dir/png.cpp.i"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/NingnaWang/Desktop/asst4_animation/src/png.cpp > CMakeFiles/animator.dir/png.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/png.cpp" > CMakeFiles/animator.dir/png.cpp.i
 
 src/CMakeFiles/animator.dir/png.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animator.dir/png.cpp.s"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/NingnaWang/Desktop/asst4_animation/src/png.cpp -o CMakeFiles/animator.dir/png.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/png.cpp" -o CMakeFiles/animator.dir/png.cpp.s
 
 src/CMakeFiles/animator.dir/png.cpp.o.requires:
 
@@ -107,16 +107,16 @@ src/CMakeFiles/animator.dir/png.cpp.o.provides.build: src/CMakeFiles/animator.di
 
 src/CMakeFiles/animator.dir/triangulation.cpp.o: src/CMakeFiles/animator.dir/flags.make
 src/CMakeFiles/animator.dir/triangulation.cpp.o: ../src/triangulation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/animator.dir/triangulation.cpp.o"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/triangulation.cpp.o -c /Users/NingnaWang/Desktop/asst4_animation/src/triangulation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/animator.dir/triangulation.cpp.o"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/triangulation.cpp.o -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/triangulation.cpp"
 
 src/CMakeFiles/animator.dir/triangulation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animator.dir/triangulation.cpp.i"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/NingnaWang/Desktop/asst4_animation/src/triangulation.cpp > CMakeFiles/animator.dir/triangulation.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/triangulation.cpp" > CMakeFiles/animator.dir/triangulation.cpp.i
 
 src/CMakeFiles/animator.dir/triangulation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animator.dir/triangulation.cpp.s"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/NingnaWang/Desktop/asst4_animation/src/triangulation.cpp -o CMakeFiles/animator.dir/triangulation.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/triangulation.cpp" -o CMakeFiles/animator.dir/triangulation.cpp.s
 
 src/CMakeFiles/animator.dir/triangulation.cpp.o.requires:
 
@@ -131,16 +131,16 @@ src/CMakeFiles/animator.dir/triangulation.cpp.o.provides.build: src/CMakeFiles/a
 
 src/CMakeFiles/animator.dir/texture.cpp.o: src/CMakeFiles/animator.dir/flags.make
 src/CMakeFiles/animator.dir/texture.cpp.o: ../src/texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/animator.dir/texture.cpp.o"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/texture.cpp.o -c /Users/NingnaWang/Desktop/asst4_animation/src/texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/animator.dir/texture.cpp.o"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/texture.cpp.o -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/texture.cpp"
 
 src/CMakeFiles/animator.dir/texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animator.dir/texture.cpp.i"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/NingnaWang/Desktop/asst4_animation/src/texture.cpp > CMakeFiles/animator.dir/texture.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/texture.cpp" > CMakeFiles/animator.dir/texture.cpp.i
 
 src/CMakeFiles/animator.dir/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animator.dir/texture.cpp.s"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/NingnaWang/Desktop/asst4_animation/src/texture.cpp -o CMakeFiles/animator.dir/texture.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/texture.cpp" -o CMakeFiles/animator.dir/texture.cpp.s
 
 src/CMakeFiles/animator.dir/texture.cpp.o.requires:
 
@@ -155,16 +155,16 @@ src/CMakeFiles/animator.dir/texture.cpp.o.provides.build: src/CMakeFiles/animato
 
 src/CMakeFiles/animator.dir/animator.cpp.o: src/CMakeFiles/animator.dir/flags.make
 src/CMakeFiles/animator.dir/animator.cpp.o: ../src/animator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/animator.dir/animator.cpp.o"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/animator.cpp.o -c /Users/NingnaWang/Desktop/asst4_animation/src/animator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/animator.dir/animator.cpp.o"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/animator.cpp.o -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/animator.cpp"
 
 src/CMakeFiles/animator.dir/animator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animator.dir/animator.cpp.i"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/NingnaWang/Desktop/asst4_animation/src/animator.cpp > CMakeFiles/animator.dir/animator.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/animator.cpp" > CMakeFiles/animator.dir/animator.cpp.i
 
 src/CMakeFiles/animator.dir/animator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animator.dir/animator.cpp.s"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/NingnaWang/Desktop/asst4_animation/src/animator.cpp -o CMakeFiles/animator.dir/animator.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/animator.cpp" -o CMakeFiles/animator.dir/animator.cpp.s
 
 src/CMakeFiles/animator.dir/animator.cpp.o.requires:
 
@@ -179,16 +179,16 @@ src/CMakeFiles/animator.dir/animator.cpp.o.provides.build: src/CMakeFiles/animat
 
 src/CMakeFiles/animator.dir/character.cpp.o: src/CMakeFiles/animator.dir/flags.make
 src/CMakeFiles/animator.dir/character.cpp.o: ../src/character.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/animator.dir/character.cpp.o"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/character.cpp.o -c /Users/NingnaWang/Desktop/asst4_animation/src/character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/animator.dir/character.cpp.o"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/character.cpp.o -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/character.cpp"
 
 src/CMakeFiles/animator.dir/character.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animator.dir/character.cpp.i"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/NingnaWang/Desktop/asst4_animation/src/character.cpp > CMakeFiles/animator.dir/character.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/character.cpp" > CMakeFiles/animator.dir/character.cpp.i
 
 src/CMakeFiles/animator.dir/character.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animator.dir/character.cpp.s"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/NingnaWang/Desktop/asst4_animation/src/character.cpp -o CMakeFiles/animator.dir/character.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/character.cpp" -o CMakeFiles/animator.dir/character.cpp.s
 
 src/CMakeFiles/animator.dir/character.cpp.o.requires:
 
@@ -203,16 +203,16 @@ src/CMakeFiles/animator.dir/character.cpp.o.provides.build: src/CMakeFiles/anima
 
 src/CMakeFiles/animator.dir/timeline.cpp.o: src/CMakeFiles/animator.dir/flags.make
 src/CMakeFiles/animator.dir/timeline.cpp.o: ../src/timeline.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/animator.dir/timeline.cpp.o"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/timeline.cpp.o -c /Users/NingnaWang/Desktop/asst4_animation/src/timeline.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/animator.dir/timeline.cpp.o"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/timeline.cpp.o -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/timeline.cpp"
 
 src/CMakeFiles/animator.dir/timeline.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animator.dir/timeline.cpp.i"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/NingnaWang/Desktop/asst4_animation/src/timeline.cpp > CMakeFiles/animator.dir/timeline.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/timeline.cpp" > CMakeFiles/animator.dir/timeline.cpp.i
 
 src/CMakeFiles/animator.dir/timeline.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animator.dir/timeline.cpp.s"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/NingnaWang/Desktop/asst4_animation/src/timeline.cpp -o CMakeFiles/animator.dir/timeline.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/timeline.cpp" -o CMakeFiles/animator.dir/timeline.cpp.s
 
 src/CMakeFiles/animator.dir/timeline.cpp.o.requires:
 
@@ -227,16 +227,16 @@ src/CMakeFiles/animator.dir/timeline.cpp.o.provides.build: src/CMakeFiles/animat
 
 src/CMakeFiles/animator.dir/hardware_renderer.cpp.o: src/CMakeFiles/animator.dir/flags.make
 src/CMakeFiles/animator.dir/hardware_renderer.cpp.o: ../src/hardware_renderer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/animator.dir/hardware_renderer.cpp.o"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/hardware_renderer.cpp.o -c /Users/NingnaWang/Desktop/asst4_animation/src/hardware_renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/animator.dir/hardware_renderer.cpp.o"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/hardware_renderer.cpp.o -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/hardware_renderer.cpp"
 
 src/CMakeFiles/animator.dir/hardware_renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animator.dir/hardware_renderer.cpp.i"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/NingnaWang/Desktop/asst4_animation/src/hardware_renderer.cpp > CMakeFiles/animator.dir/hardware_renderer.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/hardware_renderer.cpp" > CMakeFiles/animator.dir/hardware_renderer.cpp.i
 
 src/CMakeFiles/animator.dir/hardware_renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animator.dir/hardware_renderer.cpp.s"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/NingnaWang/Desktop/asst4_animation/src/hardware_renderer.cpp -o CMakeFiles/animator.dir/hardware_renderer.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/hardware_renderer.cpp" -o CMakeFiles/animator.dir/hardware_renderer.cpp.s
 
 src/CMakeFiles/animator.dir/hardware_renderer.cpp.o.requires:
 
@@ -251,16 +251,16 @@ src/CMakeFiles/animator.dir/hardware_renderer.cpp.o.provides.build: src/CMakeFil
 
 src/CMakeFiles/animator.dir/viewport.cpp.o: src/CMakeFiles/animator.dir/flags.make
 src/CMakeFiles/animator.dir/viewport.cpp.o: ../src/viewport.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/animator.dir/viewport.cpp.o"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/viewport.cpp.o -c /Users/NingnaWang/Desktop/asst4_animation/src/viewport.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/animator.dir/viewport.cpp.o"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/viewport.cpp.o -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/viewport.cpp"
 
 src/CMakeFiles/animator.dir/viewport.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animator.dir/viewport.cpp.i"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/NingnaWang/Desktop/asst4_animation/src/viewport.cpp > CMakeFiles/animator.dir/viewport.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/viewport.cpp" > CMakeFiles/animator.dir/viewport.cpp.i
 
 src/CMakeFiles/animator.dir/viewport.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animator.dir/viewport.cpp.s"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/NingnaWang/Desktop/asst4_animation/src/viewport.cpp -o CMakeFiles/animator.dir/viewport.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/viewport.cpp" -o CMakeFiles/animator.dir/viewport.cpp.s
 
 src/CMakeFiles/animator.dir/viewport.cpp.o.requires:
 
@@ -275,16 +275,16 @@ src/CMakeFiles/animator.dir/viewport.cpp.o.provides.build: src/CMakeFiles/animat
 
 src/CMakeFiles/animator.dir/main.cpp.o: src/CMakeFiles/animator.dir/flags.make
 src/CMakeFiles/animator.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/animator.dir/main.cpp.o"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/main.cpp.o -c /Users/NingnaWang/Desktop/asst4_animation/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/animator.dir/main.cpp.o"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/animator.dir/main.cpp.o -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/main.cpp"
 
 src/CMakeFiles/animator.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/animator.dir/main.cpp.i"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/NingnaWang/Desktop/asst4_animation/src/main.cpp > CMakeFiles/animator.dir/main.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/main.cpp" > CMakeFiles/animator.dir/main.cpp.i
 
 src/CMakeFiles/animator.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/animator.dir/main.cpp.s"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/NingnaWang/Desktop/asst4_animation/src/main.cpp -o CMakeFiles/animator.dir/main.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/main.cpp" -o CMakeFiles/animator.dir/main.cpp.s
 
 src/CMakeFiles/animator.dir/main.cpp.o.requires:
 
@@ -330,8 +330,8 @@ animator: CMU462/deps/glfw/src/libglfw3.a
 animator: /usr/local/lib/libfreetype.dylib
 animator: /usr/local/lib/libfreetype.dylib
 animator: src/CMakeFiles/animator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ../animator"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/animator.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ../animator"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/animator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/animator.dir/build: animator
@@ -352,10 +352,10 @@ src/CMakeFiles/animator.dir/requires: src/CMakeFiles/animator.dir/main.cpp.o.req
 .PHONY : src/CMakeFiles/animator.dir/requires
 
 src/CMakeFiles/animator.dir/clean:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/src && $(CMAKE_COMMAND) -P CMakeFiles/animator.dir/cmake_clean.cmake
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" && $(CMAKE_COMMAND) -P CMakeFiles/animator.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/animator.dir/clean
 
 src/CMakeFiles/animator.dir/depend:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/NingnaWang/Desktop/asst4_animation /Users/NingnaWang/Desktop/asst4_animation/src /Users/NingnaWang/Desktop/asst4_animation/build /Users/NingnaWang/Desktop/asst4_animation/build/src /Users/NingnaWang/Desktop/asst4_animation/build/src/CMakeFiles/animator.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src/CMakeFiles/animator.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : src/CMakeFiles/animator.dir/depend
 

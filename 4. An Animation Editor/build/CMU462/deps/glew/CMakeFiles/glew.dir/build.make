@@ -43,10 +43,10 @@ RM = /opt/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/NingnaWang/Desktop/asst4_animation
+CMAKE_SOURCE_DIR = "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/NingnaWang/Desktop/asst4_animation/build
+CMAKE_BINARY_DIR = "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build"
 
 # Include any dependencies generated for this target.
 include CMU462/deps/glew/CMakeFiles/glew.dir/depend.make
@@ -59,16 +59,16 @@ include CMU462/deps/glew/CMakeFiles/glew.dir/flags.make
 
 CMU462/deps/glew/CMakeFiles/glew.dir/src/glew.c.o: CMU462/deps/glew/CMakeFiles/glew.dir/flags.make
 CMU462/deps/glew/CMakeFiles/glew.dir/src/glew.c.o: ../CMU462/deps/glew/src/glew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMU462/deps/glew/CMakeFiles/glew.dir/src/glew.c.o"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glew && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glew.dir/src/glew.c.o   -c /Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glew/src/glew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMU462/deps/glew/CMakeFiles/glew.dir/src/glew.c.o"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glew" && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glew.dir/src/glew.c.o   -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glew/src/glew.c"
 
 CMU462/deps/glew/CMakeFiles/glew.dir/src/glew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glew.dir/src/glew.c.i"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glew && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glew/src/glew.c > CMakeFiles/glew.dir/src/glew.c.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glew" && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glew/src/glew.c" > CMakeFiles/glew.dir/src/glew.c.i
 
 CMU462/deps/glew/CMakeFiles/glew.dir/src/glew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glew.dir/src/glew.c.s"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glew && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glew/src/glew.c -o CMakeFiles/glew.dir/src/glew.c.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glew" && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glew/src/glew.c" -o CMakeFiles/glew.dir/src/glew.c.s
 
 CMU462/deps/glew/CMakeFiles/glew.dir/src/glew.c.o.requires:
 
@@ -83,16 +83,16 @@ CMU462/deps/glew/CMakeFiles/glew.dir/src/glew.c.o.provides.build: CMU462/deps/gl
 
 CMU462/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.o: CMU462/deps/glew/CMakeFiles/glew.dir/flags.make
 CMU462/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.o: ../CMU462/deps/glew/src/glewinfo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMU462/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.o"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glew && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glew.dir/src/glewinfo.c.o   -c /Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glew/src/glewinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMU462/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.o"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glew" && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glew.dir/src/glewinfo.c.o   -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glew/src/glewinfo.c"
 
 CMU462/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glew.dir/src/glewinfo.c.i"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glew && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glew/src/glewinfo.c > CMakeFiles/glew.dir/src/glewinfo.c.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glew" && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glew/src/glewinfo.c" > CMakeFiles/glew.dir/src/glewinfo.c.i
 
 CMU462/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glew.dir/src/glewinfo.c.s"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glew && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glew/src/glewinfo.c -o CMakeFiles/glew.dir/src/glewinfo.c.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glew" && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glew/src/glewinfo.c" -o CMakeFiles/glew.dir/src/glewinfo.c.s
 
 CMU462/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.o.requires:
 
@@ -107,16 +107,16 @@ CMU462/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.o.provides.build: CMU462/dep
 
 CMU462/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.o: CMU462/deps/glew/CMakeFiles/glew.dir/flags.make
 CMU462/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.o: ../CMU462/deps/glew/src/visualinfo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMU462/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.o"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glew && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glew.dir/src/visualinfo.c.o   -c /Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glew/src/visualinfo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMU462/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.o"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glew" && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glew.dir/src/visualinfo.c.o   -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glew/src/visualinfo.c"
 
 CMU462/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glew.dir/src/visualinfo.c.i"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glew && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glew/src/visualinfo.c > CMakeFiles/glew.dir/src/visualinfo.c.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glew" && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glew/src/visualinfo.c" > CMakeFiles/glew.dir/src/visualinfo.c.i
 
 CMU462/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glew.dir/src/visualinfo.c.s"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glew && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glew/src/visualinfo.c -o CMakeFiles/glew.dir/src/visualinfo.c.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glew" && /Library/Developer/CommandLineTools/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glew/src/visualinfo.c" -o CMakeFiles/glew.dir/src/visualinfo.c.s
 
 CMU462/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.o.requires:
 
@@ -143,9 +143,9 @@ CMU462/deps/glew/libglew.a: CMU462/deps/glew/CMakeFiles/glew.dir/src/glewinfo.c.
 CMU462/deps/glew/libglew.a: CMU462/deps/glew/CMakeFiles/glew.dir/src/visualinfo.c.o
 CMU462/deps/glew/libglew.a: CMU462/deps/glew/CMakeFiles/glew.dir/build.make
 CMU462/deps/glew/libglew.a: CMU462/deps/glew/CMakeFiles/glew.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libglew.a"
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glew && $(CMAKE_COMMAND) -P CMakeFiles/glew.dir/cmake_clean_target.cmake
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glew && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glew.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libglew.a"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glew" && $(CMAKE_COMMAND) -P CMakeFiles/glew.dir/cmake_clean_target.cmake
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glew" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glew.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 CMU462/deps/glew/CMakeFiles/glew.dir/build: CMU462/deps/glew/libglew.a
@@ -159,10 +159,10 @@ CMU462/deps/glew/CMakeFiles/glew.dir/requires: CMU462/deps/glew/CMakeFiles/glew.
 .PHONY : CMU462/deps/glew/CMakeFiles/glew.dir/requires
 
 CMU462/deps/glew/CMakeFiles/glew.dir/clean:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glew && $(CMAKE_COMMAND) -P CMakeFiles/glew.dir/cmake_clean.cmake
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glew" && $(CMAKE_COMMAND) -P CMakeFiles/glew.dir/cmake_clean.cmake
 .PHONY : CMU462/deps/glew/CMakeFiles/glew.dir/clean
 
 CMU462/deps/glew/CMakeFiles/glew.dir/depend:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/NingnaWang/Desktop/asst4_animation /Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glew /Users/NingnaWang/Desktop/asst4_animation/build /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glew /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glew/CMakeFiles/glew.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glew" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glew" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glew/CMakeFiles/glew.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMU462/deps/glew/CMakeFiles/glew.dir/depend
 

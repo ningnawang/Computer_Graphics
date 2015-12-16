@@ -1,8 +1,8 @@
-# Install script for directory: /Users/NingnaWang/Desktop/asst4_animation
+# Install script for directory: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/NingnaWang/Desktop/asst4_animation/")
+  set(CMAKE_INSTALL_PREFIX "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,8 +29,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/NingnaWang/Desktop/asst4_animation/build/CMU462/cmake_install.cmake")
-  include("/Users/NingnaWang/Desktop/asst4_animation/build/src/cmake_install.cmake")
+  include("/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/cmake_install.cmake")
+  include("/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src/cmake_install.cmake")
 
 endif()
 
@@ -42,5 +42,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/NingnaWang/Desktop/asst4_animation/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

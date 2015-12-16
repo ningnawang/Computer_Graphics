@@ -43,10 +43,10 @@ RM = /opt/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/NingnaWang/Desktop/asst4_animation
+CMAKE_SOURCE_DIR = "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/NingnaWang/Desktop/asst4_animation/build
+CMAKE_BINARY_DIR = "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build"
 
 # Utility rule file for uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /Users/NingnaWang/Desktop/asst4_animation/build
 include CMU462/deps/glfw/CMakeFiles/uninstall.dir/progress.make
 
 CMU462/deps/glfw/CMakeFiles/uninstall:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glfw && /opt/local/bin/cmake -P /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glfw/cmake_uninstall.cmake
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glfw" && /opt/local/bin/cmake -P /Users/NingnaWang/Desktop/Computer-Graphics/4.\ An\ Animation\ Editor/build/CMU462/deps/glfw/cmake_uninstall.cmake
 
 uninstall: CMU462/deps/glfw/CMakeFiles/uninstall
 uninstall: CMU462/deps/glfw/CMakeFiles/uninstall.dir/build.make
@@ -67,10 +67,10 @@ CMU462/deps/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : CMU462/deps/glfw/CMakeFiles/uninstall.dir/build
 
 CMU462/deps/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glfw" && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : CMU462/deps/glfw/CMakeFiles/uninstall.dir/clean
 
 CMU462/deps/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/NingnaWang/Desktop/asst4_animation /Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glfw /Users/NingnaWang/Desktop/asst4_animation/build /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glfw /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glfw" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glfw" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMU462/deps/glfw/CMakeFiles/uninstall.dir/depend
 

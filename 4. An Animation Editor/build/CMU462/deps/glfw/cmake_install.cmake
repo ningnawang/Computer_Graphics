@@ -1,4 +1,4 @@
-# Install script for directory: /Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glfw
+# Install script for directory: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -28,13 +28,13 @@ if(NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glfw/include/GLFW" FILES_MATCHING REGEX "/glfw3\\.h$" REGEX "/glfw3native\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glfw/include/GLFW" FILES_MATCHING REGEX "/glfw3\\.h$" REGEX "/glfw3native\\.h$")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES
-    "/Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glfw/src/glfw3Config.cmake"
-    "/Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glfw/src/glfw3ConfigVersion.cmake"
+    "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glfw/src/glfw3Config.cmake"
+    "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glfw/src/glfw3ConfigVersion.cmake"
     )
 endif()
 
@@ -42,7 +42,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw/glfwTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw/glfwTargets.cmake"
-         "/Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glfw/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
+         "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glfw/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw/glfwTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -51,19 +51,19 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "/Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glfw/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glfw/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "/Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glfw/CMakeFiles/Export/lib/cmake/glfw/glfwTargets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glfw/CMakeFiles/Export/lib/cmake/glfw/glfwTargets-debug.cmake")
   endif()
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glfw/src/glfw3.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glfw/src/glfw3.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glfw/src/cmake_install.cmake")
+  include("/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glfw/src/cmake_install.cmake")
 
 endif()
 

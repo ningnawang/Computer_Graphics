@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/meshedit.dir/scene.cpp.o"
   "CMakeFiles/meshedit.dir/camera.cpp.o"
   "CMakeFiles/meshedit.dir/light.cpp.o"
@@ -15,6 +15,6 @@ FILE(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/meshedit.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/meshedit.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

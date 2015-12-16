@@ -3,11 +3,11 @@
 
 # compile C with /Library/Developer/CommandLineTools/usr/bin/cc
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
-C_FLAGS = -g -I/Users/NingnaWang/Desktop/asst4_animation/CMU462/include -I/Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glew/include -I/usr/local/include/freetype2 -I/Users/NingnaWang/Desktop/asst4_animation/CMU462/include/CMU462    -Wno-constant-conversion
+C_FLAGS = -g -I"/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/include" -I"/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glew/include" -I/usr/local/include/freetype2 -I"/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/include/CMU462"    -Wno-constant-conversion
 
 C_DEFINES = 
 
-CXX_FLAGS =  -std=c++11 -m64 -g -I/Users/NingnaWang/Desktop/asst4_animation/CMU462/include -I/Users/NingnaWang/Desktop/asst4_animation/CMU462/deps/glew/include -I/usr/local/include/freetype2 -I/Users/NingnaWang/Desktop/asst4_animation/CMU462/include/CMU462    -Wno-constant-conversion
+CXX_FLAGS =  -std=c++11 -m64 -g -I"/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/include" -I"/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/deps/glew/include" -I/usr/local/include/freetype2 -I"/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/CMU462/include/CMU462"    -Wno-constant-conversion
 
 CXX_DEFINES = 
 

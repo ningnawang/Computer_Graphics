@@ -48,10 +48,10 @@ RM = /opt/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/NingnaWang/Desktop/asst4_animation
+CMAKE_SOURCE_DIR = "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/NingnaWang/Desktop/asst4_animation/build
+CMAKE_BINARY_DIR = "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles /Users/NingnaWang/Desktop/asst4_animation/build/src/CMakeFiles/progress.marks
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles 0
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/src/CMakeFiles/progress.marks"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/animator.dir/rule:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/animator.dir/rule
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/animator.dir/rule
 .PHONY : src/CMakeFiles/animator.dir/rule
 
 # Convenience name for target.
@@ -166,7 +166,7 @@ animator: src/CMakeFiles/animator.dir/rule
 
 # fast build rule for target.
 animator/fast:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/build
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/build
 .PHONY : animator/fast
 
 animator.o: animator.cpp.o
@@ -175,7 +175,7 @@ animator.o: animator.cpp.o
 
 # target to build an object file
 animator.cpp.o:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/animator.cpp.o
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/animator.cpp.o
 .PHONY : animator.cpp.o
 
 animator.i: animator.cpp.i
@@ -184,7 +184,7 @@ animator.i: animator.cpp.i
 
 # target to preprocess a source file
 animator.cpp.i:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/animator.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/animator.cpp.i
 .PHONY : animator.cpp.i
 
 animator.s: animator.cpp.s
@@ -193,7 +193,7 @@ animator.s: animator.cpp.s
 
 # target to generate assembly for a file
 animator.cpp.s:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/animator.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/animator.cpp.s
 .PHONY : animator.cpp.s
 
 character.o: character.cpp.o
@@ -202,7 +202,7 @@ character.o: character.cpp.o
 
 # target to build an object file
 character.cpp.o:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/character.cpp.o
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/character.cpp.o
 .PHONY : character.cpp.o
 
 character.i: character.cpp.i
@@ -211,7 +211,7 @@ character.i: character.cpp.i
 
 # target to preprocess a source file
 character.cpp.i:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/character.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/character.cpp.i
 .PHONY : character.cpp.i
 
 character.s: character.cpp.s
@@ -220,7 +220,7 @@ character.s: character.cpp.s
 
 # target to generate assembly for a file
 character.cpp.s:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/character.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/character.cpp.s
 .PHONY : character.cpp.s
 
 hardware_renderer.o: hardware_renderer.cpp.o
@@ -229,7 +229,7 @@ hardware_renderer.o: hardware_renderer.cpp.o
 
 # target to build an object file
 hardware_renderer.cpp.o:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/hardware_renderer.cpp.o
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/hardware_renderer.cpp.o
 .PHONY : hardware_renderer.cpp.o
 
 hardware_renderer.i: hardware_renderer.cpp.i
@@ -238,7 +238,7 @@ hardware_renderer.i: hardware_renderer.cpp.i
 
 # target to preprocess a source file
 hardware_renderer.cpp.i:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/hardware_renderer.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/hardware_renderer.cpp.i
 .PHONY : hardware_renderer.cpp.i
 
 hardware_renderer.s: hardware_renderer.cpp.s
@@ -247,7 +247,7 @@ hardware_renderer.s: hardware_renderer.cpp.s
 
 # target to generate assembly for a file
 hardware_renderer.cpp.s:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/hardware_renderer.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/hardware_renderer.cpp.s
 .PHONY : hardware_renderer.cpp.s
 
 main.o: main.cpp.o
@@ -256,7 +256,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/main.cpp.o
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -265,7 +265,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/main.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -274,7 +274,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/main.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 png.o: png.cpp.o
@@ -283,7 +283,7 @@ png.o: png.cpp.o
 
 # target to build an object file
 png.cpp.o:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/png.cpp.o
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/png.cpp.o
 .PHONY : png.cpp.o
 
 png.i: png.cpp.i
@@ -292,7 +292,7 @@ png.i: png.cpp.i
 
 # target to preprocess a source file
 png.cpp.i:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/png.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/png.cpp.i
 .PHONY : png.cpp.i
 
 png.s: png.cpp.s
@@ -301,7 +301,7 @@ png.s: png.cpp.s
 
 # target to generate assembly for a file
 png.cpp.s:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/png.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/png.cpp.s
 .PHONY : png.cpp.s
 
 svg.o: svg.cpp.o
@@ -310,7 +310,7 @@ svg.o: svg.cpp.o
 
 # target to build an object file
 svg.cpp.o:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/svg.cpp.o
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/svg.cpp.o
 .PHONY : svg.cpp.o
 
 svg.i: svg.cpp.i
@@ -319,7 +319,7 @@ svg.i: svg.cpp.i
 
 # target to preprocess a source file
 svg.cpp.i:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/svg.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/svg.cpp.i
 .PHONY : svg.cpp.i
 
 svg.s: svg.cpp.s
@@ -328,7 +328,7 @@ svg.s: svg.cpp.s
 
 # target to generate assembly for a file
 svg.cpp.s:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/svg.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/svg.cpp.s
 .PHONY : svg.cpp.s
 
 texture.o: texture.cpp.o
@@ -337,7 +337,7 @@ texture.o: texture.cpp.o
 
 # target to build an object file
 texture.cpp.o:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/texture.cpp.o
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/texture.cpp.o
 .PHONY : texture.cpp.o
 
 texture.i: texture.cpp.i
@@ -346,7 +346,7 @@ texture.i: texture.cpp.i
 
 # target to preprocess a source file
 texture.cpp.i:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/texture.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/texture.cpp.i
 .PHONY : texture.cpp.i
 
 texture.s: texture.cpp.s
@@ -355,7 +355,7 @@ texture.s: texture.cpp.s
 
 # target to generate assembly for a file
 texture.cpp.s:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/texture.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/texture.cpp.s
 .PHONY : texture.cpp.s
 
 timeline.o: timeline.cpp.o
@@ -364,7 +364,7 @@ timeline.o: timeline.cpp.o
 
 # target to build an object file
 timeline.cpp.o:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/timeline.cpp.o
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/timeline.cpp.o
 .PHONY : timeline.cpp.o
 
 timeline.i: timeline.cpp.i
@@ -373,7 +373,7 @@ timeline.i: timeline.cpp.i
 
 # target to preprocess a source file
 timeline.cpp.i:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/timeline.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/timeline.cpp.i
 .PHONY : timeline.cpp.i
 
 timeline.s: timeline.cpp.s
@@ -382,7 +382,7 @@ timeline.s: timeline.cpp.s
 
 # target to generate assembly for a file
 timeline.cpp.s:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/timeline.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/timeline.cpp.s
 .PHONY : timeline.cpp.s
 
 triangulation.o: triangulation.cpp.o
@@ -391,7 +391,7 @@ triangulation.o: triangulation.cpp.o
 
 # target to build an object file
 triangulation.cpp.o:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/triangulation.cpp.o
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/triangulation.cpp.o
 .PHONY : triangulation.cpp.o
 
 triangulation.i: triangulation.cpp.i
@@ -400,7 +400,7 @@ triangulation.i: triangulation.cpp.i
 
 # target to preprocess a source file
 triangulation.cpp.i:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/triangulation.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/triangulation.cpp.i
 .PHONY : triangulation.cpp.i
 
 triangulation.s: triangulation.cpp.s
@@ -409,7 +409,7 @@ triangulation.s: triangulation.cpp.s
 
 # target to generate assembly for a file
 triangulation.cpp.s:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/triangulation.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/triangulation.cpp.s
 .PHONY : triangulation.cpp.s
 
 viewport.o: viewport.cpp.o
@@ -418,7 +418,7 @@ viewport.o: viewport.cpp.o
 
 # target to build an object file
 viewport.cpp.o:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/viewport.cpp.o
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/viewport.cpp.o
 .PHONY : viewport.cpp.o
 
 viewport.i: viewport.cpp.i
@@ -427,7 +427,7 @@ viewport.i: viewport.cpp.i
 
 # target to preprocess a source file
 viewport.cpp.i:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/viewport.cpp.i
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/viewport.cpp.i
 .PHONY : viewport.cpp.i
 
 viewport.s: viewport.cpp.s
@@ -436,7 +436,7 @@ viewport.s: viewport.cpp.s
 
 # target to generate assembly for a file
 viewport.cpp.s:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/viewport.cpp.s
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f src/CMakeFiles/animator.dir/build.make src/CMakeFiles/animator.dir/viewport.cpp.s
 .PHONY : viewport.cpp.s
 
 # Help Target
@@ -493,6 +493,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

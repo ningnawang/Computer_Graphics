@@ -196,7 +196,59 @@ GL/glext.h
 GL/glu.h
 -
 
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/halfEdgeMesh.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/camera.cpp
+camera.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/camera.h
+
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/camera.h
+scene.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/scene.h
+
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/collada.cpp
+collada.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/collada.h
+assert.h
+-
+map
+-
+string
+-
+iomanip
+-
+fstream
+-
+sstream
+-
+iostream
+-
+algorithm
+-
+
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/collada.h
+string
+-
+vector
+-
+CMU462/CMU462.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/CMU462/CMU462.h
+CMU462/tinyxml2.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/CMU462/tinyxml2.h
+scene.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/scene.h
+camera.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/camera.h
+light.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/light.h
+mesh.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/mesh.h
+material.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/material.h
+
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/halfEdgeMesh.cpp
+halfEdgeMesh.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/halfEdgeMesh.h
+
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/halfEdgeMesh.h
 set
 -
 map
@@ -210,25 +262,91 @@ utility
 iostream
 -
 CMU462/CMU462.h
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/CMU462/CMU462.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/CMU462/CMU462.h
 mesh.h
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/mesh.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/mesh.h
 
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/material.h
-scene.h
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/scene.h
-texture.h
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/texture.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/light.cpp
+light.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/light.h
 
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/mesh.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/light.h
 scene.h
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/scene.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/scene.h
+
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/main.cpp
+CMU462/CMU462.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/CMU462/CMU462.h
+collada.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/collada.h
+meshEdit.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/meshEdit.h
+iostream
+-
+
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/material.cpp
 material.h
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/material.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/material.h
 
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/mutablePriorityQueue.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/material.h
+scene.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/scene.h
+texture.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/texture.h
 
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/scene.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/mesh.cpp
+mesh.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/mesh.h
+
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/mesh.h
+scene.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/scene.h
+material.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/material.h
+
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/meshEdit.cpp
+meshEdit.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/meshEdit.h
+cmath
+-
+
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/meshEdit.h
+string
+-
+vector
+-
+CMU462/CMU462.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/CMU462/CMU462.h
+scene.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/scene.h
+camera.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/camera.h
+light.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/light.h
+mesh.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/mesh.h
+material.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/material.h
+halfEdgeMesh.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/halfEdgeMesh.h
+student_code.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/student_code.h
+string
+-
+iostream
+-
+sstream
+-
+algorithm
+-
+
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/mutablePriorityQueue.h
+
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/scene.cpp
+scene.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/scene.h
+
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/scene.h
 string
 -
 vector
@@ -236,19 +354,29 @@ vector
 iostream
 -
 CMU462/CMU462.h
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/CMU462/CMU462.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/CMU462/CMU462.h
 
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/student_code.cpp
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/student_code.cpp
 student_code.h
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/student_code.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/student_code.h
 mutablePriorityQueue.h
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/mutablePriorityQueue.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/mutablePriorityQueue.h
 
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/student_code.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/student_code.h
 halfEdgeMesh.h
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/halfEdgeMesh.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/halfEdgeMesh.h
 
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/texture.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/texture.cpp
+texture.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/texture.h
+assert.h
+-
+iostream
+-
+algorithm
+-
+
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/texture.h
 CMU462/CMU462.h
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw2/asst2_meshedit/src/CMU462/CMU462.h
+/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /src/CMU462/CMU462.h
 

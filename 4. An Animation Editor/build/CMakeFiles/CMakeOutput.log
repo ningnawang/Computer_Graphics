@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is AppleClang, found in "/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/3.3.1/CompilerIdC/a.out"
+The C compiler identification is AppleClang, found in "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/3.3.1/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
@@ -23,36 +23,36 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is AppleClang, found in "/Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/3.3.1/CompilerIdCXX/a.out"
+The CXX compiler identification is AppleClang, found in "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/3.3.1/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1cbf7/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_1cbf7.dir/build.make CMakeFiles/cmTC_1cbf7.dir/build
-Building C object CMakeFiles/cmTC_1cbf7.dir/testCCompiler.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_1cbf7.dir/testCCompiler.c.o   -c /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_1cbf7
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cbf7.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_1cbf7.dir/testCCompiler.c.o  -o cmTC_1cbf7  
+Run Build Command:"/usr/bin/make" "cmTC_9aa54/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_9aa54.dir/build.make CMakeFiles/cmTC_9aa54.dir/build
+Building C object CMakeFiles/cmTC_9aa54.dir/testCCompiler.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_9aa54.dir/testCCompiler.c.o   -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp/testCCompiler.c"
+Linking C executable cmTC_9aa54
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9aa54.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_9aa54.dir/testCCompiler.c.o  -o cmTC_9aa54  
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f2982/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f2982.dir/build.make CMakeFiles/cmTC_f2982.dir/build
-Building C object CMakeFiles/cmTC_f2982.dir/CMakeCCompilerABI.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_f2982.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-3.3/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_f2982
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2982.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_f2982.dir/CMakeCCompilerABI.c.o  -o cmTC_f2982   
-Apple LLVM version 7.0.0 (clang-700.1.76)
+Run Build Command:"/usr/bin/make" "cmTC_a0405/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_a0405.dir/build.make CMakeFiles/cmTC_a0405.dir/build
+Building C object CMakeFiles/cmTC_a0405.dir/CMakeCCompilerABI.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_a0405.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-3.3/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_a0405
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0405.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_a0405.dir/CMakeCCompilerABI.c.o  -o cmTC_a0405   
+Apple LLVM version 7.0.2 (clang-700.1.81)
 Target: x86_64-apple-darwin14.5.0
 Thread model: posix
- "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_f2982 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_f2982.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a
-@(#)PROGRAM:ld  PROJECT:ld64-253.6
-configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_a0405 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a0405.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-253.9
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
 Library search paths:
 	/usr/lib
 	/usr/local/lib
@@ -63,19 +63,19 @@ Framework search paths:
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f2982/fast"]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f2982.dir/build.make CMakeFiles/cmTC_f2982.dir/build]
-  ignore line: [Building C object CMakeFiles/cmTC_f2982.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_f2982.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-3.3/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_f2982]
-  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2982.dir/link.txt --verbose=1]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_f2982.dir/CMakeCCompilerABI.c.o  -o cmTC_f2982   ]
-  ignore line: [Apple LLVM version 7.0.0 (clang-700.1.76)]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_a0405/fast"]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_a0405.dir/build.make CMakeFiles/cmTC_a0405.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_a0405.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_a0405.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-3.3/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_a0405]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0405.dir/link.txt --verbose=1]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_a0405.dir/CMakeCCompilerABI.c.o  -o cmTC_a0405   ]
+  ignore line: [Apple LLVM version 7.0.2 (clang-700.1.81)]
   ignore line: [Target: x86_64-apple-darwin14.5.0]
   ignore line: [Thread model: posix]
-  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_f2982 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_f2982.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_a0405 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a0405.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
     arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
     arg [-demangle] ==> ignore
     arg [-dynamic] ==> ignore
@@ -84,22 +84,22 @@ Parsed C implicit link information from above output:
     arg [-macosx_version_min] ==> ignore
     arg [10.10.0] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f2982] ==> ignore
+    arg [cmTC_a0405] ==> ignore
     arg [-search_paths_first] ==> ignore
     arg [-headerpad_max_install_names] ==> ignore
     arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_f2982.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_a0405.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lSystem] ==> lib [System]
-    arg [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
   Library search paths: [;/usr/lib;/usr/local/lib]
   Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
   remove lib [System]
-  collapse lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
   collapse library dir [/usr/lib] ==> [/usr/lib]
   collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
   collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
   collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
-  implicit libs: [/Library/Developer/CommandLineTools/usr/lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+  implicit libs: [/Library/Developer/CommandLineTools/usr/lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
   implicit dirs: [/usr/lib;/usr/local/lib]
   implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
 
@@ -107,15 +107,15 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f522c/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f522c.dir/build.make CMakeFiles/cmTC_f522c.dir/build
-Building C object CMakeFiles/cmTC_f522c.dir/feature_tests.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_f522c.dir/feature_tests.c.o   -c /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_f522c
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f522c.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_f522c.dir/feature_tests.c.o  -o cmTC_f522c  
+Run Build Command:"/usr/bin/make" "cmTC_8208c/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_8208c.dir/build.make CMakeFiles/cmTC_8208c.dir/build
+Building C object CMakeFiles/cmTC_8208c.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_8208c.dir/feature_tests.c.o   -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_8208c
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8208c.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_8208c.dir/feature_tests.c.o  -o cmTC_8208c  
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -125,15 +125,15 @@ Linking C executable cmTC_f522c
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c9ffc/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_c9ffc.dir/build.make CMakeFiles/cmTC_c9ffc.dir/build
-Building C object CMakeFiles/cmTC_c9ffc.dir/feature_tests.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_c9ffc.dir/feature_tests.c.o   -c /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c9ffc
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9ffc.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_c9ffc.dir/feature_tests.c.o  -o cmTC_c9ffc  
+Run Build Command:"/usr/bin/make" "cmTC_b0630/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_b0630.dir/build.make CMakeFiles/cmTC_b0630.dir/build
+Building C object CMakeFiles/cmTC_b0630.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_b0630.dir/feature_tests.c.o   -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_b0630
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0630.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_b0630.dir/feature_tests.c.o  -o cmTC_b0630  
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -143,15 +143,15 @@ Linking C executable cmTC_c9ffc
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f426f/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f426f.dir/build.make CMakeFiles/cmTC_f426f.dir/build
-Building C object CMakeFiles/cmTC_f426f.dir/feature_tests.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_f426f.dir/feature_tests.c.o   -c /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_f426f
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f426f.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_f426f.dir/feature_tests.c.o  -o cmTC_f426f  
+Run Build Command:"/usr/bin/make" "cmTC_0eb1b/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_0eb1b.dir/build.make CMakeFiles/cmTC_0eb1b.dir/build
+Building C object CMakeFiles/cmTC_0eb1b.dir/feature_tests.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_0eb1b.dir/feature_tests.c.o   -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_0eb1b
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0eb1b.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_0eb1b.dir/feature_tests.c.o  -o cmTC_0eb1b  
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -159,33 +159,33 @@ Linking C executable cmTC_f426f
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_05521/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_05521.dir/build.make CMakeFiles/cmTC_05521.dir/build
-Building CXX object CMakeFiles/cmTC_05521.dir/testCXXCompiler.cxx.o
-/Library/Developer/CommandLineTools/usr/bin/c++     -o CMakeFiles/cmTC_05521.dir/testCXXCompiler.cxx.o -c /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_05521
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05521.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_05521.dir/testCXXCompiler.cxx.o  -o cmTC_05521  
+Run Build Command:"/usr/bin/make" "cmTC_e11d8/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_e11d8.dir/build.make CMakeFiles/cmTC_e11d8.dir/build
+Building CXX object CMakeFiles/cmTC_e11d8.dir/testCXXCompiler.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++     -o CMakeFiles/cmTC_e11d8.dir/testCXXCompiler.cxx.o -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
+Linking CXX executable cmTC_e11d8
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e11d8.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_e11d8.dir/testCXXCompiler.cxx.o  -o cmTC_e11d8  
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f469f/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f469f.dir/build.make CMakeFiles/cmTC_f469f.dir/build
-Building CXX object CMakeFiles/cmTC_f469f.dir/CMakeCXXCompilerABI.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/c++     -o CMakeFiles/cmTC_f469f.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-3.3/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_f469f
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f469f.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_f469f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f469f   
-Apple LLVM version 7.0.0 (clang-700.1.76)
+Run Build Command:"/usr/bin/make" "cmTC_4e81c/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_4e81c.dir/build.make CMakeFiles/cmTC_4e81c.dir/build
+Building CXX object CMakeFiles/cmTC_4e81c.dir/CMakeCXXCompilerABI.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/c++     -o CMakeFiles/cmTC_4e81c.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-3.3/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_4e81c
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e81c.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_4e81c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_4e81c   
+Apple LLVM version 7.0.2 (clang-700.1.81)
 Target: x86_64-apple-darwin14.5.0
 Thread model: posix
- "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_f469f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_f469f.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a
-@(#)PROGRAM:ld  PROJECT:ld64-253.6
-configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_4e81c -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_4e81c.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-253.9
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
 Library search paths:
 	/usr/lib
 	/usr/local/lib
@@ -196,19 +196,19 @@ Framework search paths:
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f469f/fast"]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f469f.dir/build.make CMakeFiles/cmTC_f469f.dir/build]
-  ignore line: [Building CXX object CMakeFiles/cmTC_f469f.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++     -o CMakeFiles/cmTC_f469f.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-3.3/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_f469f]
-  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f469f.dir/link.txt --verbose=1]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_f469f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f469f   ]
-  ignore line: [Apple LLVM version 7.0.0 (clang-700.1.76)]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_4e81c/fast"]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_4e81c.dir/build.make CMakeFiles/cmTC_4e81c.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_4e81c.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++     -o CMakeFiles/cmTC_4e81c.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-3.3/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_4e81c]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e81c.dir/link.txt --verbose=1]
+  ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_4e81c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_4e81c   ]
+  ignore line: [Apple LLVM version 7.0.2 (clang-700.1.81)]
   ignore line: [Target: x86_64-apple-darwin14.5.0]
   ignore line: [Thread model: posix]
-  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_f469f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_f469f.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTC_4e81c -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_4e81c.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
     arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
     arg [-demangle] ==> ignore
     arg [-dynamic] ==> ignore
@@ -217,23 +217,23 @@ Parsed CXX implicit link information from above output:
     arg [-macosx_version_min] ==> ignore
     arg [10.10.0] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f469f] ==> ignore
+    arg [cmTC_4e81c] ==> ignore
     arg [-search_paths_first] ==> ignore
     arg [-headerpad_max_install_names] ==> ignore
     arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_f469f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_4e81c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lc++] ==> lib [c++]
     arg [-lSystem] ==> lib [System]
-    arg [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
   Library search paths: [;/usr/lib;/usr/local/lib]
   Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
   remove lib [System]
-  collapse lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
   collapse library dir [/usr/lib] ==> [/usr/lib]
   collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
   collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
   collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
-  implicit libs: [c++;/Library/Developer/CommandLineTools/usr/lib/clang/7.0.0/lib/darwin/libclang_rt.osx.a]
+  implicit libs: [c++;/Library/Developer/CommandLineTools/usr/lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
   implicit dirs: [/usr/lib;/usr/local/lib]
   implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
 
@@ -241,15 +241,15 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
-Change Dir: /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_46686/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_46686.dir/build.make CMakeFiles/cmTC_46686.dir/build
-Building CXX object CMakeFiles/cmTC_46686.dir/feature_tests.cxx.o
-/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTC_46686.dir/feature_tests.cxx.o -c /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_46686
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46686.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_46686.dir/feature_tests.cxx.o  -o cmTC_46686  
+Run Build Command:"/usr/bin/make" "cmTC_19237/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_19237.dir/build.make CMakeFiles/cmTC_19237.dir/build
+Building CXX object CMakeFiles/cmTC_19237.dir/feature_tests.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTC_19237.dir/feature_tests.cxx.o -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_19237
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19237.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_19237.dir/feature_tests.cxx.o  -o cmTC_19237  
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -312,15 +312,15 @@ Linking CXX executable cmTC_46686
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c1a99/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_c1a99.dir/build.make CMakeFiles/cmTC_c1a99.dir/build
-Building CXX object CMakeFiles/cmTC_c1a99.dir/feature_tests.cxx.o
-/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_c1a99.dir/feature_tests.cxx.o -c /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c1a99
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1a99.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_c1a99.dir/feature_tests.cxx.o  -o cmTC_c1a99  
+Run Build Command:"/usr/bin/make" "cmTC_0b160/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_0b160.dir/build.make CMakeFiles/cmTC_0b160.dir/build
+Building CXX object CMakeFiles/cmTC_0b160.dir/feature_tests.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_0b160.dir/feature_tests.cxx.o -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_0b160
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b160.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_0b160.dir/feature_tests.cxx.o  -o cmTC_0b160  
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -383,15 +383,15 @@ Linking CXX executable cmTC_c1a99
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c94eb/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_c94eb.dir/build.make CMakeFiles/cmTC_c94eb.dir/build
-Building CXX object CMakeFiles/cmTC_c94eb.dir/feature_tests.cxx.o
-/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_c94eb.dir/feature_tests.cxx.o -c /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c94eb
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c94eb.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_c94eb.dir/feature_tests.cxx.o  -o cmTC_c94eb  
+Run Build Command:"/usr/bin/make" "cmTC_75834/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_75834.dir/build.make CMakeFiles/cmTC_75834.dir/build
+Building CXX object CMakeFiles/cmTC_75834.dir/feature_tests.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_75834.dir/feature_tests.cxx.o -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_75834
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75834.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_75834.dir/feature_tests.cxx.o  -o cmTC_75834  
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -452,29 +452,29 @@ Linking CXX executable cmTC_c94eb
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Determining if files pthread.h exist passed with the following output:
-Change Dir: /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_33203/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_33203.dir/build.make CMakeFiles/cmTC_33203.dir/build
-Building C object CMakeFiles/cmTC_33203.dir/CheckIncludeFiles.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_33203.dir/CheckIncludeFiles.c.o   -c /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
-Linking C executable cmTC_33203
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33203.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_33203.dir/CheckIncludeFiles.c.o  -o cmTC_33203  
+Run Build Command:"/usr/bin/make" "cmTC_32b22/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_32b22.dir/build.make CMakeFiles/cmTC_32b22.dir/build
+Building C object CMakeFiles/cmTC_32b22.dir/CheckIncludeFiles.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_32b22.dir/CheckIncludeFiles.c.o   -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c"
+Linking C executable cmTC_32b22
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32b22.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_32b22.dir/CheckIncludeFiles.c.o  -o cmTC_32b22  
 
 
 Determining if the pthread_create exist passed with the following output:
-Change Dir: /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f647c/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f647c.dir/build.make CMakeFiles/cmTC_f647c.dir/build
-Building C object CMakeFiles/cmTC_f647c.dir/CheckSymbolExists.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_f647c.dir/CheckSymbolExists.c.o   -c /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_f647c
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f647c.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_f647c.dir/CheckSymbolExists.c.o  -o cmTC_f647c  
+Run Build Command:"/usr/bin/make" "cmTC_1b375/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_1b375.dir/build.make CMakeFiles/cmTC_1b375.dir/build
+Building C object CMakeFiles/cmTC_1b375.dir/CheckSymbolExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -o CMakeFiles/cmTC_1b375.dir/CheckSymbolExists.c.o   -c "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_1b375
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b375.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_1b375.dir/CheckSymbolExists.c.o  -o cmTC_1b375  
 
-File /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 

@@ -1,1 +1,0 @@
-/afs/andrew.cmu.edu/usr5/ningnaw/Desktop/15662-CG/homeworks/hw1/asst1_drawsvg/build/CMakeFiles/drawsvg.dir

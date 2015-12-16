@@ -48,10 +48,10 @@ RM = /opt/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/NingnaWang/Desktop/asst4_animation
+CMAKE_SOURCE_DIR = "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/NingnaWang/Desktop/asst4_animation/build
+CMAKE_BINARY_DIR = "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,9 +124,9 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

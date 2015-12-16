@@ -48,10 +48,10 @@ RM = /opt/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/NingnaWang/Desktop/asst4_animation
+CMAKE_SOURCE_DIR = "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/NingnaWang/Desktop/asst4_animation/build
+CMAKE_BINARY_DIR = "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles /Users/NingnaWang/Desktop/asst4_animation/build/CMU462/deps/glfw/CMakeFiles/progress.marks
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f CMakeFiles/Makefile2 CMU462/deps/glfw/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/NingnaWang/Desktop/asst4_animation/build/CMakeFiles 0
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMU462/deps/glfw/CMakeFiles/progress.marks"
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f CMakeFiles/Makefile2 CMU462/deps/glfw/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f CMakeFiles/Makefile2 CMU462/deps/glfw/clean
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f CMakeFiles/Makefile2 CMU462/deps/glfw/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f CMakeFiles/Makefile2 CMU462/deps/glfw/preinstall
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f CMakeFiles/Makefile2 CMU462/deps/glfw/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f CMakeFiles/Makefile2 CMU462/deps/glfw/preinstall
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f CMakeFiles/Makefile2 CMU462/deps/glfw/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 CMU462/deps/glfw/CMakeFiles/uninstall.dir/rule:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f CMakeFiles/Makefile2 CMU462/deps/glfw/CMakeFiles/uninstall.dir/rule
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f CMakeFiles/Makefile2 CMU462/deps/glfw/CMakeFiles/uninstall.dir/rule
 .PHONY : CMU462/deps/glfw/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -166,7 +166,7 @@ uninstall: CMU462/deps/glfw/CMakeFiles/uninstall.dir/rule
 
 # fast build rule for target.
 uninstall/fast:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(MAKE) -f CMU462/deps/glfw/CMakeFiles/uninstall.dir/build.make CMU462/deps/glfw/CMakeFiles/uninstall.dir/build
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(MAKE) -f CMU462/deps/glfw/CMakeFiles/uninstall.dir/build.make CMU462/deps/glfw/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 # Help Target
@@ -193,6 +193,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/NingnaWang/Desktop/asst4_animation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/build" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

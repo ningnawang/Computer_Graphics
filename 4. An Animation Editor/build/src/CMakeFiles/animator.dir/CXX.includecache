@@ -178,9 +178,9 @@ GL/glext.h
 GL/glu.h
 -
 
-/Users/NingnaWang/Desktop/asst4_animation/src/animator.cpp
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/animator.cpp
 animator.h
-/Users/NingnaWang/Desktop/asst4_animation/src/animator.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/animator.h
 sstream
 -
 iostream
@@ -192,47 +192,47 @@ sstream
 iomanip
 -
 
-/Users/NingnaWang/Desktop/asst4_animation/src/animator.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/animator.h
 CMU462/CMU462.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/CMU462.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/CMU462.h
 svg.h
-/Users/NingnaWang/Desktop/asst4_animation/src/svg.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg.h
 GL/glew.h
-/Users/NingnaWang/Desktop/asst4_animation/src/GL/glew.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/GL/glew.h
 CMU462/application.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/application.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/application.h
 CMU462/lodepng.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/lodepng.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/lodepng.h
 CMU462/osdtext.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/osdtext.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/osdtext.h
 character.h
-/Users/NingnaWang/Desktop/asst4_animation/src/character.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/character.h
 timeline.h
-/Users/NingnaWang/Desktop/asst4_animation/src/timeline.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/timeline.h
 svg_renderer.h
-/Users/NingnaWang/Desktop/asst4_animation/src/svg_renderer.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg_renderer.h
 hardware_renderer.h
-/Users/NingnaWang/Desktop/asst4_animation/src/hardware_renderer.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/hardware_renderer.h
 
-/Users/NingnaWang/Desktop/asst4_animation/src/character.cpp
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/character.cpp
 character.h
-/Users/NingnaWang/Desktop/asst4_animation/src/character.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/character.h
 GL/glew.h
-/Users/NingnaWang/Desktop/asst4_animation/src/GL/glew.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/GL/glew.h
 
-/Users/NingnaWang/Desktop/asst4_animation/src/character.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/character.h
 vector
 -
 svg.h
-/Users/NingnaWang/Desktop/asst4_animation/src/svg.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg.h
 spline.h
-/Users/NingnaWang/Desktop/asst4_animation/src/spline.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/spline.h
 svg_renderer.h
-/Users/NingnaWang/Desktop/asst4_animation/src/svg_renderer.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg_renderer.h
 
-/Users/NingnaWang/Desktop/asst4_animation/src/hardware_renderer.cpp
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/hardware_renderer.cpp
 hardware_renderer.h
-/Users/NingnaWang/Desktop/asst4_animation/src/hardware_renderer.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/hardware_renderer.h
 cmath
 -
 vector
@@ -242,21 +242,21 @@ iostream
 algorithm
 -
 triangulation.h
-/Users/NingnaWang/Desktop/asst4_animation/src/triangulation.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/triangulation.h
 
-/Users/NingnaWang/Desktop/asst4_animation/src/hardware_renderer.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/hardware_renderer.h
 stdio.h
 -
 CMU462/CMU462.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/CMU462.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/CMU462.h
 svg_renderer.h
-/Users/NingnaWang/Desktop/asst4_animation/src/svg_renderer.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg_renderer.h
 GL/glew.h
-/Users/NingnaWang/Desktop/asst4_animation/src/GL/glew.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/GL/glew.h
 
-/Users/NingnaWang/Desktop/asst4_animation/src/main.cpp
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/main.cpp
 animator.h
-/Users/NingnaWang/Desktop/asst4_animation/src/animator.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/animator.h
 sys/stat.h
 -
 dirent.h
@@ -264,15 +264,15 @@ dirent.h
 iostream
 -
 CMU462/CMU462.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/CMU462.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/CMU462.h
 CMU462/viewer.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/viewer.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/viewer.h
 character.h
-/Users/NingnaWang/Desktop/asst4_animation/src/character.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/character.h
 
-/Users/NingnaWang/Desktop/asst4_animation/src/png.cpp
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/png.cpp
 png.h
-/Users/NingnaWang/Desktop/asst4_animation/src/png.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/png.h
 fstream
 -
 sstream
@@ -280,49 +280,49 @@ sstream
 iostream
 -
 
-/Users/NingnaWang/Desktop/asst4_animation/src/png.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/png.h
 map
 -
 vector
 -
 CMU462/CMU462.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/CMU462.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/CMU462.h
 
-/Users/NingnaWang/Desktop/asst4_animation/src/spline.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/spline.h
 map
 -
 cmath
 -
 spline.inl
-/Users/NingnaWang/Desktop/asst4_animation/src/spline.inl
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/spline.inl
 
-/Users/NingnaWang/Desktop/asst4_animation/src/spline.inl
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/spline.inl
 
-/Users/NingnaWang/Desktop/asst4_animation/src/svg.cpp
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg.cpp
 svg.h
-/Users/NingnaWang/Desktop/asst4_animation/src/svg.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg.h
 
-/Users/NingnaWang/Desktop/asst4_animation/src/svg.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg.h
 map
 -
 vector
 -
 CMU462/CMU462.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/CMU462.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/CMU462.h
 CMU462/color.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/color.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/color.h
 CMU462/vector2D.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/vector2D.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/vector2D.h
 CMU462/matrix3x3.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/matrix3x3.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/matrix3x3.h
 CMU462/tinyxml2.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/tinyxml2.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/tinyxml2.h
 texture.h
-/Users/NingnaWang/Desktop/asst4_animation/src/texture.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/texture.h
 png.h
-/Users/NingnaWang/Desktop/asst4_animation/src/png.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/png.h
 CMU462/base64.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/base64.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/base64.h
 string
 -
 fstream
@@ -334,23 +334,23 @@ iostream
 algorithm
 -
 
-/Users/NingnaWang/Desktop/asst4_animation/src/svg_renderer.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg_renderer.h
 stdio.h
 -
 CMU462/CMU462.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/CMU462.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/CMU462.h
 svg.h
-/Users/NingnaWang/Desktop/asst4_animation/src/svg.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg.h
 viewport.h
-/Users/NingnaWang/Desktop/asst4_animation/src/viewport.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/viewport.h
 iostream
 -
 stack
 -
 
-/Users/NingnaWang/Desktop/asst4_animation/src/texture.cpp
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/texture.cpp
 texture.h
-/Users/NingnaWang/Desktop/asst4_animation/src/texture.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/texture.h
 assert.h
 -
 iostream
@@ -358,45 +358,45 @@ iostream
 algorithm
 -
 
-/Users/NingnaWang/Desktop/asst4_animation/src/texture.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/texture.h
 CMU462/CMU462.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/CMU462.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/CMU462.h
 CMU462/color.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/color.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/color.h
 vector
 -
 
-/Users/NingnaWang/Desktop/asst4_animation/src/timeline.cpp
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/timeline.cpp
 timeline.h
-/Users/NingnaWang/Desktop/asst4_animation/src/timeline.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/timeline.h
 iostream
 -
 math.h
 -
 
-/Users/NingnaWang/Desktop/asst4_animation/src/timeline.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/timeline.h
 set
 -
 GL/glew.h
-/Users/NingnaWang/Desktop/asst4_animation/src/GL/glew.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/GL/glew.h
 
-/Users/NingnaWang/Desktop/asst4_animation/src/triangulation.cpp
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/triangulation.cpp
 triangulation.h
-/Users/NingnaWang/Desktop/asst4_animation/src/triangulation.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/triangulation.h
 vector
 -
 
-/Users/NingnaWang/Desktop/asst4_animation/src/triangulation.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/triangulation.h
 svg.h
-/Users/NingnaWang/Desktop/asst4_animation/src/svg.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg.h
 
-/Users/NingnaWang/Desktop/asst4_animation/src/viewport.cpp
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/viewport.cpp
 viewport.h
-/Users/NingnaWang/Desktop/asst4_animation/src/viewport.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/viewport.h
 
-/Users/NingnaWang/Desktop/asst4_animation/src/viewport.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/viewport.h
 CMU462/CMU462.h
-/Users/NingnaWang/Desktop/asst4_animation/src/CMU462/CMU462.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/CMU462/CMU462.h
 svg.h
-/Users/NingnaWang/Desktop/asst4_animation/src/svg.h
+/Users/NingnaWang/Desktop/Computer-Graphics/4. An Animation Editor/src/svg.h
 
