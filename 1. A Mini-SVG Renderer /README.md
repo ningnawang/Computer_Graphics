@@ -18,4 +18,9 @@
 - Open Terminal
 - Under "1. A Mini-SVG Renderer" file, run following command:
 - $ mkdir build && cd build && cmake ../src && make && make install
+- Then you can change following path to rasterize every file under /svg/ directory:
+
+- $ ./drawsvg ../svg/basic/test3.svg
+- $ ./drawsvg ../svg/alpha/04_scotty.svg 
+
 
