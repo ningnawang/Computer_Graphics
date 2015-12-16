@@ -1,5 +1,0 @@
-/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /build/src/CMakeFiles/meshedit.dir
-/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /build/CMU462/src/CMakeFiles/CMU462.dir
-/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /build/CMU462/deps/glfw/CMakeFiles/uninstall.dir
-/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /build/CMU462/deps/glfw/src/CMakeFiles/glfw.dir
-/Users/NingnaWang/Desktop/Computer-Graphics/2. A Mini Mesh editor /build/CMU462/deps/glew/CMakeFiles/glew.dir
