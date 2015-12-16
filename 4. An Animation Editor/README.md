@@ -19,8 +19,8 @@
 - Then you can change following path to rasterize every file under <strong> /scenes/ </strong> directory:
 
 - $  <strong> ./animator ../scenes/clock.svg  </strong>
-![alt tag]()
+![alt tag](https://github.com/junanita/Computer-Graphics/blob/master/4.%20An%20Animation%20Editor/result/clock.png)
 
 - $  <strong> ./animator ../scenes/pencil.svg  </strong>
-![alt tag]()
+![alt tag](https://github.com/junanita/Computer-Graphics/blob/master/4.%20An%20Animation%20Editor/result/pensil.png)
 
