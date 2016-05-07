@@ -274,10 +274,6 @@ bool BVHAccel::intersect(const Ray &ray) const {
 }
 
 
-
-
-
-
 bool BVHAccel::intersect(const Ray &ray, Intersection *i) const {
 
   // TODO:
@@ -308,7 +304,6 @@ bool BVHAccel::intersect(const Ray &ray, Intersection *i) const {
   // }
 
   // return hit;
-
 
 }
 
@@ -357,7 +352,6 @@ void BVHAccel::find_closest_hit(const Ray &ray, BVHNode * node, Intersection * c
   }
 
 }
-
 
 
 }  // namespace StaticScene

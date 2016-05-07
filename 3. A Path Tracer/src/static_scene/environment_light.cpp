@@ -9,6 +9,10 @@ EnvironmentLight::EnvironmentLight(const HDRImageBuffer* envMap)
     : envMap(envMap) {
   // TODO: initialize things here as needed
     this->envMap = envMap;
+    worldToLocal[0] = Vector3D(0, 0, 1);
+    worldToLocal[1] = Vector3D(0, 1, 0);
+    worldToLocal[2] = Vector3D(-1, 0, 0);
+    localToWorld = worldToLocal.T();
 
   // // compute p(theta, phi) based on area of unit sphere (sin_theta * d(theta) * d(phi))
   // double sum_area;
@@ -98,19 +102,66 @@ Spectrum EnvironmentLight::sample_L(const Vector3D& p, Vector3D* wi,
 Spectrum EnvironmentLight::sample_dir(const Ray& r) const {
   // TODO: Implement
 
-  Vector3D new_p = r.d;
+  size_t w = envMap->w;
+  size_t h = envMap->h;
 
-  double phi = atan2(new_p.x, -new_p.z) + PI; //width (0, 2PI)
-  double theta = acos(new_p.y); //height (0, PI)
+  Vector3D dir = (worldToLocal * r.d).unit();
+
+  // Vector3D new_p = r.d;
+
+  // double phi = atan2(new_p.x, -new_p.z) + PI; //width (0, 2PI)
+  // double theta = acos(new_p.y); //height (0, PI)
+
+  // // mapping from normalized space to texture space
+  // float su = (phi / (2.f * PI)) * envMap->w;
+  // float sv = (theta / PI) * envMap->h;
+
+
+  double phi = atan2(dir.z, dir.x);
+  double theta = acos(dir.y);
 
   // mapping from normalized space to texture space
-  float su = (phi / (2.f * PI)) * envMap->w;
-  float sv = (theta / PI) * envMap->h;
+  float su = phi / (2 * M_PI) + 0.5f;
+  float sv = theta / M_PI;
 
-  Spectrum c = envMap->data[(int)(su) + (int)(sv) * envMap->w];
+  // using bilinear interpolation
+  float x = su * w + w;
+  float y = sv * h;
 
-  return c;
-  // return Spectrum(0, 0, 0);
+  size_t x0 = floor(x - 0.5f), x1 = (x0 + 1);
+  float weightx_0 = (x1 + 0.5) - x;
+  float weightx_1 = x - (x0 + 0.5);
+
+  if (y < 0.5) {
+    float weighty_1 = 0.5f + y;
+    x0 %= w;
+    x1 %= w;
+    return envMap->data[x0] * (weightx_0 * weighty_1) +
+           envMap->data[x1] * (weightx_1 * weighty_1) +
+           topL * (1 - weighty_1);
+  
+  } else if (y > h - 0.5f) {
+    float weighty_0 = h + 0.5f - y;
+    x0 %= w;
+    x1 %= w;
+    return envMap->data[x0 + (h - 1) * w] * (weightx_0 * weighty_0) + 
+           envMap->data[x1 + (h - 1) * w] * (weightx_1 * weighty_0) + bottomL * (1 - weighty_0);
+  
+  } else {
+    x0 %= w;
+    x1 %= w;
+    size_t y0 = floor(y - 0.5f);
+    size_t y1 = (y0 + 1);
+    float weighty_0 = (y1 + 0.5f) - y;
+    float weighty_1 = 1 - weighty_0;
+    
+    return envMap->data[x0 + y0 * w] * weightx_0 * weighty_0 + envMap->data[x0 + y1 * w] * weightx_0 * weighty_1 +
+           envMap->data[x1 + y0 * w] * weightx_1 * weighty_0 + envMap->data[x1 + y1 * w] * weightx_1 * weighty_1;
+  }
+
+  // Spectrum c = envMap->data[(int)(su) + (int)(sv) * envMap->w];
+
+  // return c;
 }
 
 } // namespace StaticScene

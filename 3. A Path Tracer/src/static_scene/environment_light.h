@@ -44,6 +44,10 @@ class EnvironmentLight : public SceneLight {
 
  private:
   const HDRImageBuffer* envMap;
+
+  Matrix3x3 localToWorld, worldToLocal;
+  Spectrum topL, bottomL;
+  float *cellAreas; // cellAreas[y] = SA of cell in row y
 }; // class EnvironmentLight
 
 } // namespace StaticScene

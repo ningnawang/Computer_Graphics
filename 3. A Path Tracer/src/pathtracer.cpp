@@ -458,69 +458,74 @@ Spectrum PathTracer::trace_ray(const Ray& r, bool includeLe) {
   Vector3D w_out = w2o * (r.o - hit_p);
   w_out.normalize();
 
-  // TODO:
-  // Extend the below code to compute the direct lighting for all the lights
-  // in the scene, instead of just the dummy light we provided in part 1.
+  if (!isect.bsdf->is_delta()) {
 
-  int total_num_light_samples = 0;
-  Spectrum L_direct = Spectrum(0.0, 0.0, 0.0);
+    // TODO:
+    // Extend the below code to compute the direct lighting for all the lights
+    // in the scene, instead of just the dummy light we provided in part 1.
+
+    int total_num_light_samples = 0;
+    Spectrum L_direct = Spectrum(0.0, 0.0, 0.0);
 
 
-  for (SceneLight* light : scene->lights) {
-    // InfiniteHemisphereLight light(Spectrum(5.f, 5.f, 5.f));
-    // DirectionalLight light(Spectrum(5.f, 5.f, 5.f), Vector3D(1.0, -1.0, 0.0));
+    for (SceneLight* light : scene->lights) {
+      // InfiniteHemisphereLight light(Spectrum(5.f, 5.f, 5.f));
+      // DirectionalLight light(Spectrum(5.f, 5.f, 5.f), Vector3D(1.0, -1.0, 0.0));
 
-    Vector3D dir_to_light;
-    float dist_to_light;
-    float pdf;
+      Vector3D dir_to_light;
+      float dist_to_light;
+      float pdf;
 
-    // no need to take multiple samples from a directional source
-    int num_light_samples = light->is_delta_light() ? 1 : ns_area_light;
-    // total_num_light_samples += num_light_samples;
+      // no need to take multiple samples from a directional source
+      int num_light_samples = light->is_delta_light() ? 1 : ns_area_light;
+      // total_num_light_samples += num_light_samples;
 
-    // integrate light over the hemisphere about the normal
-    // double scale = 1.0 / num_light_samples;
-    for (int i=0; i<num_light_samples; i++) {
-        // returns a vector 'dir_to_light' that is a direction from
-        // point hit_p to the point on the light source.  It also returns
-        // the distance from point x to this point on the light source.
-        // (pdf is the probability of randomly selecting the random
-        // sample point on the light source -- more on this in part 2)
-        Spectrum light_L = light->sample_L(hit_p, &dir_to_light, &dist_to_light, &pdf);
+      // integrate light over the hemisphere about the normal
+      // double scale = 1.0 / num_light_samples;
+      for (int i=0; i<num_light_samples; i++) {
+          // returns a vector 'dir_to_light' that is a direction from
+          // point hit_p to the point on the light source.  It also returns
+          // the distance from point x to this point on the light source.
+          // (pdf is the probability of randomly selecting the random
+          // sample point on the light source -- more on this in part 2)
+          Spectrum light_L = light->sample_L(hit_p, &dir_to_light, &dist_to_light, &pdf);
 
-        // convert direction into coordinate space of the surface, where
-        // the surface normal is [0 0 1]
-        Vector3D w_in = w2o * dir_to_light;
-        w_in.normalize();
-        dir_to_light.normalize();
+          // convert direction into coordinate space of the surface, where
+          // the surface normal is [0 0 1]
+          Vector3D w_in = w2o * dir_to_light;
+          w_in.normalize();
+          dir_to_light.normalize();
 
-        // note that computing dot(n,w_in) is simple
-        // in surface coordinates since the normal is [0 0 1]
-        double cos_theta = std::max(0.0, w_in[2]);
+          // note that computing dot(n,w_in) is simple
+          // in surface coordinates since the normal is [0 0 1]
+          double cos_theta = std::max(0.0, w_in[2]);
 
-        // evaluate surface bsdf
-        Spectrum f = isect.bsdf->f(w_out, w_in);
+          // evaluate surface bsdf
+          Spectrum f = isect.bsdf->f(w_out, w_in);
 
-        // TODO:
-        // Construct a shadow ray and compute whether the intersected surface is
-        // in shadow and accumulate reflected radiance
-        Vector3D o_shadow = hit_p + EPS_D * dir_to_light;
-        Ray ray_shadow = Ray(o_shadow,  dir_to_light);
-        Intersection isect_shadow;
-        // not in shadow, accumulate reflect radiance
-        if (!bvh->intersect(ray_shadow, &isect_shadow)) {
-          L_direct += f * light_L * cos_theta * (1.0 / pdf);
-        }
-        else { // may be in shadow
+          // TODO:
+          // Construct a shadow ray and compute whether the intersected surface is
+          // in shadow and accumulate reflected radiance
+          Vector3D o_shadow = hit_p + EPS_D * dir_to_light;
+          Ray ray_shadow = Ray(o_shadow,  dir_to_light);
+          Intersection isect_shadow;
+
           // not in shadow, accumulate reflect radiance
-          if (isect_shadow.t >= dist_to_light) { 
+          if (!bvh->intersect(ray_shadow, &isect_shadow)) {
             L_direct += f * light_L * cos_theta * (1.0 / pdf);
-          }
-        }
-    }// for all light samples in one light
-    L_out += L_direct * (1.0 / num_light_samples);
+            L_out += L_direct * (1.0 / num_light_samples);
 
-  } // for all lights
+          }
+          else { // may be in shadow
+            // not in shadow, accumulate reflect radiance
+            if (isect_shadow.t >= dist_to_light) { 
+              L_direct += f * light_L * cos_theta * (1.0 / pdf);
+              L_out += L_direct * (1.0 / num_light_samples);
+            }
+          }
+      }// for all light samples in one light
+    } // for all lights
+  }
 
 
   // TODO:
@@ -533,25 +538,27 @@ Spectrum PathTracer::trace_ray(const Ray& r, bool includeLe) {
   float pdf;
   Spectrum f = isect.bsdf->sample_f(w_out, &wi, &pdf);
   Vector3D dir_to_hemisphere = o2w * wi;
+
+  // Russian Roulette
   float temp_clamp = clamp(0.0, 1.0, f.illum());
   float terminateProb = 1.f - temp_clamp;
-  float rand_float = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
+  double rand_float = ((double)std::rand()) / RAND_MAX;
   if (rand_float  < terminateProb) {
     return L_out;
   }
-  Vector3D hit_p_offset = hit_p + EPS_D * dir_to_hemisphere;
-  Ray ray_indirect = Ray(hit_p_offset, dir_to_hemisphere);
-  ray_indirect.depth = r.depth + 1;
-  double scale = 1.f / (pdf * (1.f - terminateProb));
-  if (pdf != 1.0) { // diffuse material
-    L_out += f * trace_ray(ray_indirect, isect.bsdf->is_delta()) * std::max(0.0, wi[2]) * scale;
-    return L_out;
-  }
-  else { // other material like mirror, glass
-    L_out += f * trace_ray(ray_indirect, isect.bsdf->is_delta()) * scale;
-    return L_out;
-  }
 
+  // reflected / refracted ray 
+  const Vector3D& w_in_world = (o2w * wi).unit();
+  Vector3D hit_p_offset = hit_p + EPS_D * w_in_world;
+  Ray ray_indirect = Ray(hit_p_offset, w_in_world, INF_D, r.depth + 1);
+
+  // Monte Carlo estimator
+  double cos_theta = fabs(wi.z);
+  double temp = pdf * (1 - terminateProb);
+  double scale = temp ? cos_theta / temp : 0;
+
+  L_out +=  f * trace_ray(ray_indirect, isect.bsdf->is_delta()) * scale;
+  return L_out;
 }
 
 Spectrum PathTracer::raytrace_pixel(size_t x, size_t y) {

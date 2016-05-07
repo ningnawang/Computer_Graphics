@@ -34,8 +34,7 @@ InfiniteHemisphereLight::InfiniteHemisphereLight(const Spectrum& rad)
 Spectrum InfiniteHemisphereLight::sample_L(const Vector3D& p, Vector3D* wi,
                                            float* distToLight,
                                            float* pdf) const {
-  Vector3D dir = sampler.get_sample();
-  *wi = sampleToWorld* dir;
+  *wi = sampleToWorld * sampler.get_sample();
   *distToLight = INF_D;
   *pdf = 1.0 / (2.0 * M_PI);
   return radiance;
@@ -43,15 +42,16 @@ Spectrum InfiniteHemisphereLight::sample_L(const Vector3D& p, Vector3D* wi,
 
 // Point Light //
 
-PointLight::PointLight(const Spectrum& rad, const Vector3D& pos) : 
+PointLight::PointLight(const Spectrum& rad, const Vector3D& pos) :
   radiance(rad), position(pos) { }
 
 Spectrum PointLight::sample_L(const Vector3D& p, Vector3D* wi,
                              float* distToLight,
                              float* pdf) const {
   Vector3D d = position - p;
-  *wi = d.unit();
-  *distToLight = d.norm();
+  double dist = d.norm();
+  *wi = d / dist;
+  *distToLight = dist;
   *pdf = 1.0;
   return radiance;
 }
@@ -71,17 +71,18 @@ Spectrum SpotLight::sample_L(const Vector3D& p, Vector3D* wi,
 
 // Area Light //
 
-AreaLight::AreaLight(const Spectrum& rad, 
-                     const Vector3D& pos,   const Vector3D& dir, 
+AreaLight::AreaLight(const Spectrum& rad,
+                     const Vector3D& pos,   const Vector3D& dir,
                      const Vector3D& dim_x, const Vector3D& dim_y)
   : radiance(rad), position(pos), direction(dir),
     dim_x(dim_x), dim_y(dim_y), area(dim_x.norm() * dim_y.norm()) { }
 
-Spectrum AreaLight::sample_L(const Vector3D& p, Vector3D* wi, 
+
+Spectrum AreaLight::sample_L(const Vector3D& p, Vector3D* wi,
                              float* distToLight, float* pdf) const {
 
-  Vector2D sample = sampler.get_sample() - Vector2D(0.5f, 0.5f);
-  Vector3D d = position + sample.x * dim_x + sample.y * dim_y - p;
+  const Vector2D& sample = sampler.get_sample() - Vector2D(0.5f, 0.5f);
+  const Vector3D& d = position + sample.x * dim_x + sample.y * dim_y - p;
   float cosTheta = dot(d, direction);
   float sqDist = d.norm2();
   float dist = sqrt(sqDist);
@@ -97,7 +98,7 @@ SphereLight::SphereLight(const Spectrum& rad, const SphereObject* sphere) {
 
 }
 
-Spectrum SphereLight::sample_L(const Vector3D& p, Vector3D* wi, 
+Spectrum SphereLight::sample_L(const Vector3D& p, Vector3D* wi,
                                float* distToLight, float* pdf) const {
 
   return Spectrum();
@@ -109,7 +110,7 @@ MeshLight::MeshLight(const Spectrum& rad, const Mesh* mesh) {
 
 }
 
-Spectrum MeshLight::sample_L(const Vector3D& p, Vector3D* wi, 
+Spectrum MeshLight::sample_L(const Vector3D& p, Vector3D* wi,
                              float* distToLight, float* pdf) const {
   return Spectrum();
 }

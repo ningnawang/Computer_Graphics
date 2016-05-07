@@ -10,6 +10,20 @@ using std::swap;
 
 namespace CMU462 {
 
+/**
+ * Returns a number distributed uniformly over [0, 1].
+ */
+inline double random_uniform() {
+  return ((double)std::rand()) / RAND_MAX;
+}
+
+/**
+ * Returns true with probability p and false with probability 1 - p.
+ */
+inline bool coin_flip(double p) {
+  return random_uniform() < p;
+}
+
 void make_coord_space(Matrix3x3& o2w, const Vector3D& n) {
 
     Vector3D z = Vector3D(n.x, n.y, n.z);
@@ -81,7 +95,9 @@ Spectrum MirrorBSDF::sample_f(const Vector3D& wo, Vector3D* wi, float* pdf) {
 
   // Attension: no need to divide by cos_theta
   // has already handled this case in pathtracer.pp trace_ray() function.
-  return reflectance; 
+  // return reflectance; 
+  return (1.f / cos_theta(wo)) * reflectance;
+
 }
 
 // Glossy BSDF //
@@ -107,8 +123,23 @@ Spectrum RefractionBSDF::sample_f(const Vector3D& wo, Vector3D* wi, float* pdf) 
 
   // TODO:
   // Implement RefractionBSDF
+  
+  *pdf = 1.0f;
 
-  return Spectrum();
+  float cosTheta = cos_theta(wo);
+  bool entering = cosTheta > 0;
+  float ei = 1.f, et = ior;
+  if (!entering) {
+      swap(ei, et);
+      cosTheta = -cosTheta;
+  }
+  float inveta = et / ei;
+  float inveta2 = inveta * inveta;
+
+  if (refract(wo, wi, ior))
+      return inveta2 / cosTheta * transmittance;
+  else
+      return Spectrum();  // total internal reflection case
 }
 
 // Glass BSDF //
@@ -126,51 +157,78 @@ Spectrum GlassBSDF::sample_f(const Vector3D& wo, Vector3D* wi, float* pdf) {
   double ior_t;
   double cos_theta_o;
   double cos_theta_i;
+  float cosTheta = cos_theta(wo);
+  float f = 1 - fabs(cosTheta);
+
+  float r_paral = (ior-1.0)*(ior-1.0)/((ior + 1.0)*(ior + 1.0));
+  float g = ((f * f) * (f * f)) * f;
+  float Fr = r_paral + (1.0 - r_paral)*g;
+
 
   // refract(wo, wi, ior);
   // total internal refraction
   if(!refract(wo, wi, ior)) { 
       *pdf = 1.0;
-      return reflectance;
-      // return Spectrum();
+      reflect(wo, wi);
+      return (1 / cosTheta) * reflectance;
   }
 
-  // the fraction of reflected light 
-  double Fr = 0.0;
-
-  // the ray is currently in vacuum
-  if (dot(wo, n) > 0) {
-    ior_i = 1.f;
-    ior_t = ior;
-    cos_theta_o = dot(wo, n);
-    cos_theta_i = dot(*wi, -n);
+  bool entering = cos_theta(wo) > 0;
+  float iro_i = 1.f, iro_t = ior;
+  if (!entering) {
+      swap(iro_i, iro_t);
+      cosTheta = -cosTheta;  
   }
-  else { // the ray is leaving the surface and entering vacuum
-    ior_i = ior;
-    ior_t = 1.f;
-    cos_theta_o = dot(wo, -n);
-    cos_theta_i = dot(*wi, n);
-  }
+  float inveta = iro_t / iro_i;
+  float inveta_sqr = inveta * inveta;
 
-  double r_paral = (ior_t * cos_theta_o - ior_i * cos_theta_i) / (ior_t * cos_theta_o + ior_i * cos_theta_i);
-  double r_perpen = (ior_i * cos_theta_o - ior_t * cos_theta_i) / (ior_i * cos_theta_o + ior_t * cos_theta_i);
 
-  Fr = (r_paral * r_paral + r_perpen * r_perpen) / 2.f;
+  // // the fraction of reflected light 
+  // double Fr = 0.0;
+
+  // // the ray is currently in vacuum
+  // if (dot(wo, n) > 0) {
+  //   ior_i = 1.f;
+  //   ior_t = ior;
+  //   cos_theta_o = dot(wo, n);
+  //   cos_theta_i = dot(*wi, -n);
+  // }
+  // else { // the ray is leaving the surface and entering vacuum
+  //   ior_i = ior;
+  //   ior_t = 1.f;
+  //   cos_theta_o = dot(wo, -n);
+  //   cos_theta_i = dot(*wi, n);
+  // }
+
+  // double r_paral = (ior_t * cos_theta_o - ior_i * cos_theta_i) / (ior_t * cos_theta_o + ior_i * cos_theta_i);
+  // double r_perpen = (ior_i * cos_theta_o - ior_t * cos_theta_i) / (ior_i * cos_theta_o + ior_t * cos_theta_i);
+
+  // Fr = (r_paral * r_paral + r_perpen * r_perpen) / 2.f;
 
   double RAN = (double)(std::rand()) / RAND_MAX;
-  if (RAN > Fr) { // refraction 
-    *pdf = 1;
-    // Attension: no need to divide by cos_theta
-    // has already handled this case in pathtracer.pp trace_ray() function.
-    return transmittance * (pow(ior_t, 2) / pow(ior_i, 2));  
-  }
-  else { // reflection
+  if (RAN < Fr) {
+    *pdf = Fr;
     reflect(wo, wi);
-    *pdf = 1;
-    // Attension: no need to divide by cos_theta
-    // has already handled this case in pathtracer.pp trace_ray() function.
-    return reflectance;
+    return (Fr / cosTheta) * reflectance;
+  } else {
+
+    *pdf = 1.0f - Fr;
+    return transmittance * ((1.0f - Fr) * inveta_sqr / cosTheta);
   }
+
+  // if (RAN > Fr) { // refraction 
+  //   *pdf = 1;
+  //   // Attension: no need to divide by cos_theta
+  //   // has already handled this case in pathtracer.pp trace_ray() function.
+  //   return transmittance * (pow(ior_t, 2) / pow(ior_i, 2));  
+  // }
+  // else { // reflection
+
+  //   *pdf = fresnel_coe;
+  //   reflect(wo, wi);
+  //   return (fresnel_coe / cosTheta) * reflectance;
+
+  // }
 
 }
 
