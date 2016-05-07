@@ -1,7 +1,6 @@
 /*
  * Implementations for Joint Based Characters.
  *
- * Started on October 29th, 2015 by Bryce Summers.
  */
 
 #include "character.h"
@@ -59,13 +58,16 @@ namespace CMU462
 
       this->update(time);
 
-      Vector3D sourcePoint_transform = goalJoint->currentTransformation * Vector3D(sourcePoint.x, sourcePoint.y, 1);
-      root->calculateAngleGradient(goalJoint, Vector2D(sourcePoint_transform.x, sourcePoint_transform.y), targetPoint);
+      Vector3D sourcePoint_transform = goalJoint->currentTransformation * 
+                                       Vector3D(sourcePoint.x, sourcePoint.y, 1);
+      root->calculateAngleGradient(goalJoint, Vector2D(sourcePoint_transform.x, 
+                                       sourcePoint_transform.y), targetPoint);
       root->ikAngleGradient = 0.0;
 
       // apply gradient descent
       for (int i = 0; i < 10; i++) {
-         for (std::vector<Joint*>::iterator it = joints.begin(); it != joints.end(); it++) {
+         for (std::vector<Joint*>::iterator it = joints.begin(); 
+               it != joints.end(); it++) {
             double currAngle = (*it)->getAngle(time);
             double newAngle = currAngle - 0.0000001 * (*it)->ikAngleGradient;
             (*it)->setAngle(time, newAngle);
@@ -78,59 +80,50 @@ namespace CMU462
    void Joint :: integrate( double time, double timestep, Vector2D cumulativeAcceleration )
    {
       // TODO IMPLEMENT ME (TASK 3A)
-      double m;
-      double I;
+
+      // handle keyframed joints
+      double m, I;
       Vector2D center_of_mass;
-      this->physicalQuantities(m, I, center_of_mass, this->center); 
-      double L = sqrt(dot((center_of_mass - this->center), (center_of_mass - this->center))) / 5.0;
-      double g = 30.0;
-
-
-      // pass the cumulative acceleration to all children
-      std::vector<Joint *> children = this->kids;
-      for (std::vector<Joint *>::iterator it = children.begin(); it != children.end(); it++) {
-
-         // calculate keyframe rotation accelaration
-         if (this->type == KEYFRAMED) {
-            // Lnew is different from L
-            double Lnew = sqrt(dot((this->center - (*it)->center), (this->center - (*it)->center))) / 5.0;
-            double alpha = angle.evaluate(time);
-            double alpha_1stDer = angle.evaluate(time, 1);
-            double alpha_2ndDer = angle.evaluate(time, 2);
-
-            double sin_alpha = sinf(alpha);
-            double cos_alpha = cosf(alpha);
-
-            double tempX = Lnew * (-sinf(alpha) * pow(alpha_1stDer, 2) + alpha_2ndDer * cosf(alpha)) * 5.0;
-            double tempY = Lnew * (cosf(alpha) * pow(alpha_1stDer, 2) + alpha_2ndDer * sinf(alpha)) * 5.0;
-
-            Vector3D a_rotation_homo = Vector3D(tempX, tempY, 0); // not do (x, y, 1), coz we don't want translation here
-            a_rotation_homo = currentParentTransformation * a_rotation_homo;
-            Vector2D a_rotation = Vector2D(a_rotation_homo.x, a_rotation_homo.y);
-
-            cumulativeAcceleration = cumulativeAcceleration + a_rotation;
-         }
-
-         (*it)->integrate(time, timestep, cumulativeAcceleration);
-      }
-
-
-      // apply equation of motion
-      double current_omega = this->omega;
-      double current_theta = this->theta;
-
-      // calculate psi responsing to center of mass
-      Vector2D y = center_of_mass - this->center;
-      double psi = atan2(y.x, y.y); //radian
-      current_theta = current_theta - psi;
-      Vector2D y_perp = Vector2D(-y.y, y.x);
+      physicalQuantities(m, I, center_of_mass, center);
+      double L = (center_of_mass - center).norm();
+      double g = 3.0;
 
       // using semi-implicit Euler
       // apply damping by multiplying exp(-a * timestep) where a = 1
       // also consider swing motion
-      double temp_step = dot(cumulativeAcceleration, y_perp) / pow(L, 2) +  m * g * L * sinf(current_theta) * timestep / I;
-      this->omega = (current_omega - temp_step) * exp(-timestep);
-      this->theta = current_theta + this->omega * timestep;
+      Vector2D y_perp = Vector2D(cos(theta), sin(theta));
+      double step = -(dot(cumulativeAcceleration, y_perp) / 0.2 + 
+                           m * g * L * sin(this->theta) / I);
+      this->omega += step * timestep;
+      this->theta += this->omega * timestep;
+      this->omega *= exp(-timestep); //damping
+
+      
+      // Integrate the children.
+      for( vector<Joint*>::iterator it = kids.begin(); it != kids.end(); it++) {
+         
+         // handle keyframed joints
+         if( type == KEYFRAMED ) {
+
+            // Lnew is different from L
+            double Lnew = 400.0;
+            double alpha = angle.evaluate(time);
+            double alpha_1stDer = angle.evaluate(time, 1);
+            double alpha_2ndDer = angle.evaluate(time, 2);
+            double dotAlpha2 = alpha_1stDer * alpha_1stDer;
+            Vector2D a = alpha_2ndDer * Lnew * Vector2D(cos(alpha), sin(alpha)) +
+                           dotAlpha2 * Lnew * Vector2D(-sin(alpha), cos(alpha)) ;
+
+            // not do (x, y, 1), coz we don't want translation here
+            Vector3D a_rotation_homo = Vector3D(a.x, a.y, 0);
+            a_rotation_homo = currentParentTransformation * a_rotation_homo;
+            Vector2D a_rotation = Vector2D(a_rotation_homo.x, a_rotation_homo.y);
+
+            cumulativeAcceleration += a_rotation;
+         }
+
+          (*it)->integrate(time, timestep, cumulativeAcceleration);
+       }
 
    }
 
@@ -142,7 +135,8 @@ namespace CMU462
       Vector2D a_translation = position.evaluate(time, 2);
 
       std::vector<Joint *> children = root->kids;
-      for (std::vector<Joint *>::iterator it = children.begin(); it != children.end(); it++) {
+      for (std::vector<Joint *>::iterator it = children.begin(); 
+               it != children.end(); it++) {
          (*it)->integrate(time, timestep, a_translation);
       }
 
