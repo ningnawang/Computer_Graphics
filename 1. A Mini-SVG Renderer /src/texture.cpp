@@ -114,13 +114,15 @@ Color Sampler2DImp::sample_nearest(Texture& tex,
   int sv = v * tex.mipmap[level].height;
 
   // interpolate to the nearest neighbour
-  su = round(su);
-  sv = round(sv);
+  su = floor(su + 0.5);
+  sv = floor(sv + 0.5);
 
   // return the color
   Color c;
   MipLevel& mip = tex.mipmap[level];
-  uint8_to_float(&c.r, &mip.texels[4 * (su + sv * tex.mipmap[level].width)]);
+  if ((su >= 0 && su < mip.width) && (sv >= 0 && sv < mip.height)) {
+    uint8_to_float(&c.r, &mip.texels[4 * (su + sv * mip.width)]);
+  }
   return c;
 
 }
@@ -179,7 +181,10 @@ Color Sampler2DImp::sample_nearest(Texture& tex,
     // Task 8: Implement trilinear filtering
 
     int level_low, level_high;
-    float L = sqrt(pow(u_scale * tex.width, 2) + pow(v_scale * tex.height, 2));
+    float du = u_scale, dv = v_scale;
+    float dx = 1.0 / tex.mipmap[0].width;
+    float dy = 1.0 / tex.mipmap[0].height;
+    float L = max(du / dx, dv / dy);
     float d = log2(L);
   
     // all negative d will rasterize level 0
@@ -197,13 +202,13 @@ Color Sampler2DImp::sample_nearest(Texture& tex,
       return Color(1,0,1,1);
     }
   
+    double dToLow_ratio = (double) (d - level_low);
     if (level_low == level_high) {
       return sample_bilinear(tex, u, v, level_low);
     } else {
-      double dToLow_ratio = (double) (d - level_low);
       // calculate weighted color by calling bilinear function
       return sample_bilinear(tex, u, v, level_low) * (1 - dToLow_ratio) +
-	sample_bilinear(tex, u, v, level_high) * dToLow_ratio;
+	           sample_bilinear(tex, u, v, level_high) * dToLow_ratio;
     }
   }
 

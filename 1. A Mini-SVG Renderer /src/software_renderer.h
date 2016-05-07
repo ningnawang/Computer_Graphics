@@ -96,10 +96,6 @@ class SoftwareRendererImp : public SoftwareRenderer {
   // rasterize a point on supersample_target
   void rasterize_supersample_point( float x, float y, Color color );
 
-  // helper method for Edge Equation
-  int getSgn(double d);
-
-
   // Primitive Drawing //
 
   // Draws an SVG element

@@ -29,6 +29,24 @@ inline void float_to_uint8( unsigned char* dst, float src[4] ) {
   dst_uint8[3] = (uint8_t) ( 255.f * max( 0.0f, min( 1.0f, src[3])));
 }
 
+// helper method for Edge Equation
+// return the sign of a double input
+inline int getSgn(double d) {
+  if (d == 0.0) return 0.0;
+  return d < 0.0? -1.0 : 1.0; 
+}
+
+inline unsigned char clamp(float c) {
+  return (unsigned char)(255.f * max(0.f, min(c, 1.f)));
+}
+
+inline double fpart(double d) {
+  return d < 0 ? 1 - (d - floor(d)) : d - floor(d);
+}
+
+inline double rfpart(double d) { return 1 - fpart(d); }
+
+
 // Implements SoftwareRenderer //
 
 void SoftwareRendererImp::draw_svg( SVG& svg ) {
@@ -252,6 +270,8 @@ void SoftwareRendererImp::draw_group( Group& group ) {
 // The input arguments in the rasterization functions 
 // below are all defined in screen space coordinates
 
+
+
 void SoftwareRendererImp::rasterize_point( float x, float y, Color color ) {
   
   // Attension: this function will write color to supersample_target directly (not render_target),
@@ -285,57 +305,125 @@ void SoftwareRendererImp::rasterize_line( float x0, float y0,
   // Task 1: 
   // Implement line rasterization
 
+
   size_t sample_rate = this->sample_rate;
   float x0_super = x0 * sample_rate;
   float y0_super = y0 * sample_rate;
   float x1_super = x1 * sample_rate;
   float y1_super = y1 * sample_rate;
 
-  float dx = (x1_super - x0_super);
-  float dy = (y1_super - y0_super);
-  float x, y, xend, yend;
-  int step = (dx > 0 && dy > 0) || (dx < 0 && dy < 0) ? 1 : -1; // +1 or -1
-  int isSwap = 0;
+  float dx = x1_super - x0_super;
+  float dy = y1_super - y0_super;
+
+
+  /* Bresenham's Algorithm */
+
+  // float x, y, xend, yend;
+  // int step = (dx > 0 && dy > 0) || (dx < 0 && dy < 0) ? 1 : -1; // +1 or -1
+  // int isSwap = 0;
+
+  // // |k| > 1, swap x and y 
+  // if (fabs(dy) > fabs(dx)) {
+  //   swap(dx, dy);
+  //   swap(x0_super, y0_super);
+  //   swap(x1_super, y1_super);
+  //   isSwap = 1;
+  // }
+
+  // // |k| < 1
+  // if (dx >= 0) {
+  //   x = floor(x0_super) + 0.5; // round to the nearest sample point
+  //   y = floor(y0_super) + 0.5;
+  //   xend = x1_super;
+  // } else {
+  //   x = floor(x1_super) + 0.5;
+  //   y = floor(y1_super) + 0.5;
+  //   xend = x0_super;
+  // }
+  // float d = dx > 0 ? fabs(y0_super - y) : fabs(y1_super - y);
+  // float k = fabs(dy / dx);
+  // for ( ; x <= xend; x++) {
+  //   if (isSwap) {
+  //     rasterize_point(y, x, color); // x and y was swapped (|K| > 1)
+  //   } else {
+  //     rasterize_point(x, y, color);
+  //   }
+  //   d = d + k;
+  //   if (d > 0.5) {
+  //     d = d - 1;
+  //     y += step;
+  //   }
+  // }
+
+
+  /* Xiaolin Wu's Algorithm */
+
+  bool isSwap = fabs(dy) > fabs(dx);
 
   // |k| > 1, swap x and y 
   if (fabs(dy) > fabs(dx)) {
     swap(dx, dy);
     swap(x0_super, y0_super);
     swap(x1_super, y1_super);
-    isSwap = 1;
   }
 
-  // |k| < 1
-  if (dx >= 0) {
-    x = floor(x0_super) + 0.5; // round to the nearest sample point
-    y = floor(y0_super) + 0.5;
-    xend = x1_super;
+  if (x0_super > x1_super) {
+    swap(x0_super, x1_super);
+    swap(y0_super, y1_super);
+  }
+
+  // compute gradient
+  float gradient = dy / dx;
+
+  // align gradient to center of pixel
+  x0_super -= 0.5;
+  y0_super -= 0.5;
+  x1_super -= 0.5;
+  y1_super -= 0.5; 
+
+  // handle first endpoint
+  int xend = round(x0_super);
+  float yend = y0_super + gradient * (xend - x0_super);
+  float xgap = rfpart(x0_super + 0.5);
+  int xpxl1 = xend; // this will be used in the main loop
+  int ypxl1 = int(yend);
+  if (isSwap) {
+    rasterize_point(ypxl1, xpxl1, rfpart(yend) * xgap * color);
+    rasterize_point(ypxl1 + 1, xpxl1, fpart(yend) * xgap * color);
   } else {
-    x = floor(x1_super) + 0.5;
-    y = floor(y1_super) + 0.5;
-    xend = x0_super;
+    rasterize_point(xpxl1, ypxl1, rfpart(yend) * xgap * color);
+    rasterize_point(xpxl1, ypxl1 + 1, fpart(yend) * xgap * color);
   }
-  float d = dx > 0 ? fabs(y0_super - y) : fabs(y1_super - y);
-  float k = fabs(dy / dx);
-  for ( ; x <= xend; x++) {
+  float intery = yend + gradient; // first y-intersection for the main loop
+
+  // handle second endpoint
+  xend = round(x1_super);
+  yend = y1_super + gradient * (xend - x1_super);
+  xgap = fpart(x1_super + 0.5);
+  int xpxl2 = xend; // this will be used in the main loop
+  int ypxl2 = int(yend);
+  if (isSwap) {
+    rasterize_point(ypxl2, xpxl2, rfpart(yend) * xgap * color);
+    rasterize_point(ypxl2 + 1, xpxl2, fpart(yend) * xgap * color);
+  } else {
+    rasterize_point(xpxl2, ypxl2, rfpart(yend) * xgap * color);
+    rasterize_point(xpxl2, ypxl2 + 1, fpart(yend) * xgap * color);
+  }
+
+  // main loop
+  for (float x = (xpxl1 + 1); x <= (xpxl2 - 1); x++) {
     if (isSwap) {
-      rasterize_point(y, x, color); // x and y was swapped (|K| > 1)
+      rasterize_point(int(intery), x, rfpart(intery) * color);
+      rasterize_point(int(intery) + 1, x, fpart(intery) * color);
     } else {
-      rasterize_point(x, y, color);
+      rasterize_point(x, int(intery), rfpart(intery) * color);
+      rasterize_point(x, int(intery) + 1, fpart(intery) * color);
     }
-    d = d + k;
-    if (d > 0.5) {
-      d = d - 1;
-      y += step;
-    }
+    intery += gradient;
   }
+
 } 
 
-// return the sign of a double input
-int SoftwareRendererImp::getSgn(double d) {
-  if (d == 0.0) return 0.0;
-  return d < 0.0? -1.0 : 1.0; 
-}
 
 void SoftwareRendererImp::rasterize_triangle( float x0, float y0,
                                               float x1, float y1,
@@ -381,8 +469,8 @@ void SoftwareRendererImp::rasterize_triangle( float x0, float y0,
       // if the sample point is in the triagle, then all edge equations 
       // should be either positive or negative 
       if (getSgn(A01 * x + B01 * y + C01) == getSgn(A12 * x + B12 * y + C12) &&
-	  getSgn(A12 * x + B12 * y + C12) == getSgn(A20 * x + B20 * y + C20)) {
-	rasterize_point(x, y, color);
+	         getSgn(A12 * x + B12 * y + C12) == getSgn(A20 * x + B20 * y + C20)) {
+	           rasterize_point(x, y, color);
       }
     }
   }
@@ -463,8 +551,8 @@ void SoftwareRendererImp::rasterize_image( float x0, float y0,
 
 
 
-  // resolve samples to render target
-  void SoftwareRendererImp::resolve( void ) {
+// resolve samples to render target
+void SoftwareRendererImp::resolve( void ) {
 
     // Task 3: 
     // Implement supersampling
@@ -473,40 +561,30 @@ void SoftwareRendererImp::rasterize_image( float x0, float y0,
     size_t sample_rate = this->sample_rate;
     size_t sample_rate_square = pow(sample_rate, 2);
 
-    // resampling using box filter
-    Color c_unweighted;
-    vector<Color> box(sample_rate * sample_rate);
-  
-    for (int y = 0; y < superTarget_h; y += sample_rate) {
-      for (int x = 0; x < superTarget_w; x += sample_rate) {
-      
-	// fill box
-	int box_x = 0, box_y = 0;
-	while (box_y < sample_rate) {
-	  while (box_x < sample_rate) {
-	    uint8_to_float(&box[box_x + box_y * sample_rate].r, 
-			   &supersample_target[4 * ((x + box_x) + (y + box_y) * superTarget_w)]);
-	    box_x++;
-	  }
-	  box_x = 0;
-	  box_y++;
-	}
+    float avg;
+    for (int x = 0; x < target_w; x++) {
+      for (int y = 0; y < target_h; y++) {
 
-	// unweighted average
-	for (int i = 0; i < box.size(); i++) {
-	  if (i == 0) c_unweighted = box[i];
-	  else {
-	    c_unweighted += box[i];
-	  }
-	}
-	c_unweighted *= (float) 1 / sample_rate_square; // size_t is a big integer, 
-	// the divide operator may make c_unweighted always be 0 
-	// fill render_target with unweighted-avg color
-	float_to_uint8(&render_target[4 * (x / sample_rate + y / sample_rate * target_w)],
-		       &c_unweighted.r);
+        // calculate color attributes: r g b a
+        for (int i = 0; i < 4; i++) {
+          avg = 0;
+          size_t sx = x * sample_rate;
+          size_t sy = y * sample_rate;
 
+          // fill box
+          for (int m = 0; m < sample_rate; m++) {
+            for (int n = 0; n < sample_rate; n++) {
+              avg += supersample_target[4 * ((sx + m) + (sy + n) * superTarget_w) + i];
+            }
+          }
+
+          avg *= 1.0f / sample_rate_square;
+          render_target[4 * (x + y * target_w) + i] = (uint8_t)avg;
+        }
       }
     }
+    
+    // supersample_target will be cleared in draw_svg()
     return;
   }
 
