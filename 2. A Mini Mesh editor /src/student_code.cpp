@@ -1,7 +1,7 @@
 /*
 * Student solution for CMU 15-462 Project 2 (MeshEdit)
 *
-* Implemented by ____ on ____.
+* Implemented by Ningna Wang.
 *
 */
 
@@ -28,84 +28,84 @@ namespace CMU462
                v4                v4
     **/
 
-    // get all info for each face
-    // face 1: f1
-    HalfedgeIter h1 = e0->halfedge();
-    HalfedgeIter h11 = h1->next();
-    HalfedgeIter h12 = h11->next();
-    FaceIter f1 = h1->face();
-    VertexIter v1 = h1->vertex();
-    VertexIter v2 = h11->vertex();
-    VertexIter v3 = h12->vertex();
-    // face 2: f2
-    HalfedgeIter h2 = h1->twin();
-    HalfedgeIter h21 = h2->next();
-    HalfedgeIter h22 = h21->next();
-    FaceIter f2 = h2->face();
-    VertexIter v4 = h22->vertex();
+     // get all info for each face
+     // face 1: f1
+     HalfedgeIter h1 = e0->halfedge();
+     HalfedgeIter h11 = h1->next();
+     HalfedgeIter h12 = h11->next();
+     FaceIter f1 = h1->face();
+     VertexIter v1 = h1->vertex();
+     VertexIter v2 = h11->vertex();
+     VertexIter v3 = h12->vertex();
+     // face 2: f2
+     HalfedgeIter h2 = h1->twin();
+     HalfedgeIter h21 = h2->next();
+     HalfedgeIter h22 = h21->next();
+     FaceIter f2 = h2->face();
+     VertexIter v4 = h22->vertex();
 
-    // handle non-manifold case
-    if (e0->isBoundary() ||
-        v1->degree() < 3 || v2->degree() < 3) {
-      return this->verticesEnd();
-    }
+     // handle non-manifold case
+     if (e0->isBoundary() ||
+         v1->degree() < 3 || v2->degree() < 3) {
+       return this->verticesEnd();
+     }
 
-    // allocate new point, edges, halfedges & faces
-    VertexIter v5 = this->newVertex(); 
-    v5->position = (v1->position + v2->position) / 2;
-    EdgeIter e45 = this->newEdge(); 
-    EdgeIter e35 = this->newEdge(); 
-    EdgeIter e25 = this->newEdge(); 
-    HalfedgeIter h3 = this->newHalfedge();
-    HalfedgeIter h31 = this->newHalfedge();
-    HalfedgeIter h32 = this->newHalfedge();
-    HalfedgeIter h4 = this->newHalfedge();
-    HalfedgeIter h41 = this->newHalfedge();
-    HalfedgeIter h42 = this->newHalfedge();
-    FaceIter f3 = this->newFace();
-    FaceIter f4 = this->newFace();
+     // allocate new point, edges, halfedges & faces
+     VertexIter v5 = this->newVertex(); 
+     v5->position = (v1->position + v2->position) / 2.;
+     EdgeIter e45 = this->newEdge(); 
+     EdgeIter e35 = this->newEdge(); 
+     EdgeIter e25 = this->newEdge(); 
+     HalfedgeIter h3 = this->newHalfedge();
+     HalfedgeIter h31 = this->newHalfedge();
+     HalfedgeIter h32 = this->newHalfedge();
+     HalfedgeIter h4 = this->newHalfedge();
+     HalfedgeIter h41 = this->newHalfedge();
+     HalfedgeIter h42 = this->newHalfedge();
+     FaceIter f3 = this->newFace();
+     FaceIter f4 = this->newFace();
 
-    // do split
-    // consider halfedge changes
-    // face f1
-    h1->setNeighbors(h32, h2, v1, h1->edge(), f1); //next, twin, vertex, edge, face
-    h32->setNeighbors(h12, h31, v5, e35, f1);
-    h12->setNeighbors(h1, h12->twin(), v3, h12->edge(), f1);
-    // face f2
-    h2->setNeighbors(h21, h1, v5, h2->edge(), f2);
-    h21->setNeighbors(h42, h21->twin(), v1, h21->edge(), f2);
-    h42->setNeighbors(h2, h41, v4, e45, f2);
-    // face f3
-    h3->setNeighbors(h11, h4, v5, e25, f3);
-    h11->setNeighbors(h31, h11->twin(), v2, h11->edge(), f3);
-    h31->setNeighbors(h3, h32, v3, e35, f3);
-    // face f4
-    h4->setNeighbors(h41, h3, v2, e25, f4);
-    h41->setNeighbors(h22, h42, v5, e45, f4);
-    h22->setNeighbors(h4, h22->twin(), v4, h22->edge(), f4);
+     // do split
+     // consider halfedge changes
+     // face f1
+     h1->setNeighbors(h32, h2, v1, h1->edge(), f1); //next, twin, vertex, edge, face
+     h32->setNeighbors(h12, h31, v5, e35, f1);
+     h12->setNeighbors(h1, h12->twin(), v3, h12->edge(), f1);
+     // face f2
+     h2->setNeighbors(h21, h1, v5, h2->edge(), f2);
+     h21->setNeighbors(h42, h21->twin(), v1, h21->edge(), f2);
+     h42->setNeighbors(h2, h41, v4, e45, f2);
+     // face f3
+     h3->setNeighbors(h11, h4, v5, e25, f3);
+     h11->setNeighbors(h31, h11->twin(), v2, h11->edge(), f3);
+     h31->setNeighbors(h3, h32, v3, e35, f3);
+     // face f4
+     h4->setNeighbors(h41, h3, v2, e25, f4);
+     h41->setNeighbors(h22, h42, v5, e45, f4);
+     h22->setNeighbors(h4, h22->twin(), v4, h22->edge(), f4);
 
-    //consider edge changes
-    e35->halfedge() = h32;
-    e45->halfedge() = h41;
-    e25->halfedge() = h3;
+     //consider edge changes
+     e35->halfedge() = h32;
+     e45->halfedge() = h41;
+     e25->halfedge() = h3;
 
-    // consider vertex
-    v5->halfedge() = h3;
-    if (v2->halfedge() == h2) {
-      v2->halfedge() = h4;
-    }
+     // consider vertex
+     v5->halfedge() = h3;
+     if (v2->halfedge() == h2) {
+       v2->halfedge() = h4;
+     }
 
-    //consider face
-    if (f1->halfedge() == h11) {
-      f1->halfedge() = h32;
-    }
-    if (f2->halfedge() == h22) {
-      f2->halfedge() = h42;
-    }
-    f3->halfedge() = h3;
-    f4->halfedge() = h4;
+     //consider face
+     if (f1->halfedge() == h11) {
+       f1->halfedge() = h32;
+     }
+     if (f2->halfedge() == h22) {
+       f2->halfedge() = h42;
+     }
+     f3->halfedge() = h3;
+     f4->halfedge() = h4;
 
- 	  return v5;
+     return v5; 
  }
 
  VertexIter HalfedgeMesh::collapseEdge( EdgeIter e )
@@ -286,7 +286,7 @@ namespace CMU462
     // handle non-manifold case
     if (e0->isBoundary() ||
         v1->degree() < 3 || v2->degree() < 3) {
-      return this->edgesEnd();
+      return e0;
     }
 
     // handle non-manifold case
@@ -366,8 +366,9 @@ namespace CMU462
       HalfedgeIter h = v->halfedge();
       do {
         HalfedgeIter h_twin = h->twin();
-        VertexIter neighbor = h_twin->vertex();
-        sum += neighbor->position;
+        // VertexIter neighbor = h_twin->vertex();
+        // sum += neighbor->position;
+        sum += h->next()->vertex()->position;
         h = h_twin->next();
       } while (h != v->halfedge());
       // compute newPosition 
@@ -418,10 +419,20 @@ namespace CMU462
        edgePoint->isNew = true;
        edgePoint->newPosition = e->newPosition;
 
-       // flag whether an edge is a piece of an edge in the original mesh, or is an entirely new edge created during the subdivision step.
-       HalfedgeIter oldHalfEdge = edgePoint->halfedge();
-       oldHalfEdge->next()->next()->edge()->isNew = true;
-       oldHalfEdge->twin()->next()->edge()->isNew = true;
+       // flag whether an edge is a piece of an edge in the original mesh, 
+       // or is an entirely new edge created during the subdivision step.
+       // HalfedgeIter oldHalfEdge = edgePoint->halfedge();
+       // oldHalfEdge->next()->next()->edge()->isNew = true;
+       // oldHalfEdge->twin()->next()->edge()->isNew = true;
+       bool isNew = false;
+       HalfedgeIter h = edgePoint->halfedge();
+       do
+       {
+          h->edge()->isNew = isNew;
+          h = h->twin()->next();
+          isNew = !isNew;
+       }
+       while( h != edgePoint->halfedge() );
 
        e = nextEdge;
     }
@@ -607,15 +618,15 @@ namespace CMU462
     HalfedgeIter h = this->halfedge();
     do {
       HalfedgeIter h_twin = h->twin();
-      VertexIter v_neighbor = h_twin->vertex();
-      avg_position += v_neighbor->position;
+      // VertexIter v_neighbor = h_twin->vertex();
+      // avg_position += v_neighbor->position;
+      avg_position += h->next()->vertex()->position;
       h = h_twin->next();
       count++;
     } while (h != this->halfedge());
 
     avg_position /= count;
     this->centroid = avg_position;
-
  }
 
  Vector3D Vertex::normal( void ) const
@@ -658,7 +669,9 @@ namespace CMU462
       avg += e->length();
       e++;
     }
-    avg *= (double) 1.0 / mesh.nEdges(); 
+    // avg *= (double) 1.0 / mesh.nEdges(); 
+    avg /= (double) mesh.nEdges();
+    avg *= .9;
 
     // TODO Repeat the four main steps for 5 or 6 iterations
     for (int i = 0; i < 5; i++) {
@@ -670,13 +683,14 @@ namespace CMU462
         EdgeIter next = e;
         next++;
         if (e->length() > 4.0 * avg / 3.0) {
-          VertexIter v_split = mesh.splitEdge(e);
-          if (v_split == mesh.verticesEnd()) {
-            e = next;
-            continue;
-          }
-          e = v_split->halfedge()->edge();
-          continue;
+          // VertexIter v_split = mesh.splitEdge(e);
+          // if (v_split == mesh.verticesEnd()) {
+          //   e = next;
+          //   continue;
+          // }
+          // e = v_split->halfedge()->edge();
+          // continue;
+          mesh.splitEdge(e);
         }
         e = next;
       }
@@ -690,14 +704,25 @@ namespace CMU462
         EdgeIter next = e;
         next++;
         if (e->length() < 4.0 * avg / 5.0) {
-          VertexIter v_collapse = mesh.collapseEdge(e);
-          if (v_collapse == mesh.verticesEnd()) {
-            e = next;
-            continue;
+        //   VertexIter v_collapse = mesh.collapseEdge(e);
+        //   if (v_collapse == mesh.verticesEnd()) {
+        //     e = next;
+        //     continue;
+        //   }
+        //   e = v_collapse->halfedge()->edge();
+        //   continue;
+          EdgeIter e1 = e->halfedge()->next()->edge();
+          EdgeIter e2 = e->halfedge()->next()->next()->edge();
+          EdgeIter e3 = e->halfedge()->twin()->next()->edge();
+          EdgeIter e4 = e->halfedge()->twin()->next()->next()->edge();
+          while( next == e  || next == e1 ||
+                 next == e2 || next == e3 || next == e4 ) {
+             next++;
           }
-          e = v_collapse->halfedge()->edge();
-          continue;
+
+          mesh.collapseEdge(e);
         }
+
         e = next;
       }
 
