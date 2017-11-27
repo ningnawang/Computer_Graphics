@@ -1,6 +1,6 @@
 # Computer Graphics Implementation
 - The following files implementated and fully tested the basic computer graphics 
-- Including CMU 15-462/662 Assignments in 2015Fall
+- Including CMU 15-462/662 Assignments in 2015Fall (http://15462.courses.cs.cmu.edu/fall2015/)
 
 ## 1. A Mini-SVG Renderer 
 [See more detail here!](https://github.com/junanita/Computer-Graphics/tree/master/1.%20A%20Mini-SVG%20Renderer%20)
