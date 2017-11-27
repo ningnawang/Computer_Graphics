@@ -30,6 +30,11 @@
 -- <strong>Edge Collapse</strong> <br/>
 -- <strong>Edge Split</strong> <br/>
 
+## 3. A Path Tracer
+[See more detail here!](https://github.com/junanita/Computer_Graphics/tree/master/3.%20A%20Path%20Tracer)
+- Implemented a simple path tracer that can render pictures with global illumination effects.
+- Provided an efficient implementation of ray-scene geometry queries
+- Add the ability to simulate how light bounces around the scene, which allows to synthesize much higher-quality images
 
 ## 4. An Animation Editor 
 [See more detail here!](https://github.com/junanita/Computer-Graphics/tree/master/4.%20An%20Animation%20Editor)
